@@ -6,6 +6,8 @@
 
 ## HTML, CSS, JS
 
+As per week 3, HTML and CSS only
+
 ## Installation
 https://github.com/OctavioRodriguezPaseyro/BaSP-M2022-Etapa-1/tree/master
 
