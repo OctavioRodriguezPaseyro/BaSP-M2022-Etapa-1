@@ -1,0 +1,29 @@
+*{
+position:relative;
+margin:0;
+padding:o;
+size:auto;
+font:normal, helvetica, sans-serif;
+}
+#header{
+    background-color:#50A780;
+}
+#sidebar{
+    align:left;
+    height:100%;
+    width: 26%;
+    background-color:#50A780;
+    text-align: center;
+}
+#body{
+    align:right;
+}
+#footer{
+    align:bottom;
+}
+.menu{
+
+}
+.bottom-table{
+    background-color:#50A780;
+}
