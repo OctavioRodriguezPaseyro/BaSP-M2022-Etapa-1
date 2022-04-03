@@ -1,29 +1,60 @@
 *{
 position:relative;
 margin:0;
-padding:o;
+padding:0;
 size:auto;
 font:normal, helvetica, sans-serif;
+text-align: center;
+}
+#logo{
+    
 }
 #header{
+    align:top;
     background-color:#50A780;
+    height:3%;
 }
 #sidebar{
-    align:left;
-    height:100%;
-    width: 26%;
+    float:left;
+    height:80%;
+    width:22%;
     background-color:#50A780;
     text-align: center;
 }
+h2{
+    border-bottom-color:2px #ED2626;
+}
 #body{
-    align:right;
+    align:center;
+    padding-left:22%;
+    text-align: center;
+}
+#landing-general{
+
+}
+#landing-spotlight{
+    margin-left: auto;
+    margin-right: auto;
+}
+#landing-know-more{
+
+}
+#landing-about-us{
+
+}
+#landing-form{
+
 }
 #footer{
     align:bottom;
+    height:10%;
 }
-.menu{
-
-}
-.bottom-table{
+#landing-bottom-table{
     background-color:#50A780;
+    height:11%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+#social-media{
+
 }
