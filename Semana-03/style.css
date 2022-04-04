@@ -41,20 +41,21 @@ a:hover{
 #body{
     align:center;
     padding-left:22%;
-    text-align: center;
 }
 #logo{
-    margin: 3.6%, 0%, 0%, 22%;
+    margin-left:4%;
+    margin-top:2%;
     display: block;
 }
 #landing-general img{
-    margin-left: 0%;
+    margin-left: 13%;
     display: block;
 }
 #landing-general{
 
 }
 #landing-spotlight{
+    text-align: center;
 
 }
 #landing-know-more{
