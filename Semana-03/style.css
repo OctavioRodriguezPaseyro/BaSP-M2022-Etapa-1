@@ -1,87 +1,150 @@
 *{
-position:relative;
-margin:0;
-padding:0;
-size:auto;
-font:normal, helvetica, sans-serif;
-}
-a{
-    color:#000;
-}
-a:hover{
-    background-color:#808080;
-}
-.btn-1{
-    border-radius: 200px;
-}
-.search.btn{
-    border-radius: 200px;  
-}
-#header{
-    overflow: auto;
-    float:top;
-    background-color:#50A780;
-    filter: drop-shadow(#fff);
-    height:3%;
-    text-align: center;
-}
-.sidebar-btn{
-    border-radius:5px;
-}
-#sidebar{
-    float:left;
-    padding-top:3%;
-    padding-left:1%;
-    padding-bottom:21%;
-    height:80%;
-    width:22%;
-    background-image:linear-gradient(#50A780,#fff 80%);
-    text-align: left;
-}
-#body{
-    align:center;
-    padding-left:22%;
-}
-#logo{
-    margin-left:4%;
-    margin-top:2%;
-    display: block;
-}
-#landing-general img{
-    margin-left: 13%;
-    display: block;
-}
-#landing-general{
-
-}
-#landing-spotlight{
-    text-align: center;
-
-}
-#landing-know-more{
-    margin:auto;
-}
-#landing-about-us{
-    background-color:#E9E9E9;
-    border-radius: 20px;
-}
-#landing-form{
-    text-align: center;
-}
-#landing-bottom-table{
-    text-align: center;
-    float:center;
-    table-layout:fixed;
-    margin:auto;
-    background-color:#50A780;
-    height:11%;
-    width: fit-content;
-}
-#footer{
-    align:bottom;
-    height:10%;
-    text-align: center;
-}
-#social-media{
-
-}
+    position:relative;
+    margin:0;
+    padding:0;
+    size:auto;
+    font:normal, helvetica, sans-serif;
+    }
+    a{
+        color:#000;
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
+    a:hover{
+        background-color:#808080;
+    }
+    #header{
+        float:top;
+        background-color:#50A780;
+        filter: drop-shadow(#fff);
+        height:3%;
+        text-align: center;
+        overflow: auto;
+    }
+    .menu-btn{
+        background-color: transparent;
+        border:none;
+        width:42px;
+        height:42px;
+    }
+    .search-bar{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+    }
+    .search.btn{
+        border-radius: 200px;
+        border:none;
+    }
+    .log-in-btn{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+    }
+    .sign-up-btn{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+    }
+    #sidebar{
+        float:left;
+        display: inline-block;
+        padding-top:3%;
+        padding-left:1%;
+        padding-bottom:21%;
+        height:fit-content;
+        width:22%;
+        background-image:linear-gradient(#50A780,#fff 80%);
+        text-align: left;
+        overflow: auto;
+    }
+    #sidebar button{
+        border-radius: 200px;
+        background-color:#49A37B;
+        border:none;
+    }
+    .sidebar-btn{
+        border-radius:5px;
+        border:#000;
+        background-color:#49A37B;
+        color: #fff;
+    }
+    #sidebar h3{
+        text-decoration: underline;
+        text-decoration-color:#ED2626;
+    }
+    aside li{
+        text-align: justify;
+    }
+    #body{
+        align:center;
+        padding-left:22%;
+    }
+    #logo{
+        margin-left:4%;
+        margin-top:2%;
+        display: block;
+        text-align: justify;
+    }
+    #logo img{
+        float:left;
+        width:60px;
+        height:60px;
+    }
+    #landing-general img{
+        float:left;
+        margin-left: 13%;
+        display: block;
+    }
+    #landing-general{
+    }
+    #landing-spotlight{
+        text-align: center;
+    }
+    #landing-know-more{
+        text-align: center;
+        float:center;
+        table-layout:fixed;
+        margin:auto;
+        width: fit-content;
+    }
+    #landing-about-us{
+        background-color:#E9E9E9;
+        border-radius: 20px;
+        text-align: justify;
+    }
+    #landing-about-us img{
+        overflow:auto;
+    }
+    #landing-form{
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        height: 10%;
+        padding: 10%;
+        padding-top: 5%;
+    }
+    #landing-bottom-table{
+        text-align: center;
+        float:center;
+        table-layout:fixed;
+        margin:auto;
+        background-color:#50A780;
+        height:11%;
+        width: fit-content;
+    }
+    #landing-bottom-table{
+        color:#DBDBDB;
+    }
+    #footer{
+        align:bottom;
+        height:10%;
+        text-align: center;
+    }
+    #social-media img{
+        width:  50px;
+        height: 50px;
+        object-fit: cover;
+    }

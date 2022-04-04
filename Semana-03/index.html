@@ -12,13 +12,15 @@
 </head>
 <body>
 <header id="header">
-<input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" width="50" height="50" class="menu-btn" alt="open menu"/>
-<a href="tutorials">Tutorials</a>
-|
-<a href="contact">Contact</a>
-<input type="text" name="Search" placeholder="Search" class="search-bar"><button type="button"><img src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" width="50" height="50" alt="search" class="search-btn"></button>
-<button class="btn1">Log in</button>
-<button class="btn1">Sign up</button>
+    <nav>
+        <input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" class="menu-btn" alt="open menu"/>
+        <a href="tutorials">Tutorials</a>
+        <text>|</text>
+        <a href="contact">Contact</a>
+        <input type="text" name="Search" placeholder="Search" class="search-bar"><button type="button"><img src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" width="50" height="50" alt="search" class="search-btn"></button>
+        <button type="button" class="log-in-btn">Log in</button>
+        <button type="button" class="sign-up-btn">Sign up</button>
+    </nav>
 </header>
 <aside id="sidebar">
     <h3>Menu</h3>
@@ -39,8 +41,8 @@
     <li><a href="mailto:trackgenix@info.com">trackgenix@info.com</a></li>
     <li><a href="https://goo.gl/maps/NmShPij78EhV55TEA" target="_blank">1234 Somewhere Road #8254</p>
     <p>Nashville, TN 00000-0000</a></p></li>
-    <li><button class="sidebar-btn">Get system information</button></li>
     </ol>
+    <button type="button" class="sidebar-btn">Get system information</button>
 </aside>
 <main>
 <div id="body">
@@ -49,12 +51,16 @@
     <h1>Trackgenix</h1>
     <h2>Data Management</h2>
 </div>
-    <div id="landing-general">
+    <section id="landing-general">
     <span><img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt=""></span>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
+    <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
         sapiente ducimus architecto nulla voluptate dolorum nihil cupiditate eveniet.
-        Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?</p>
-    </div>
+        Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?</article>
+    </section>
+<!-- Use figure instead?
+    <figure class="simplicity (etc)">
+    <img src="image_link">
+    <figcaption>Simplicity</figcaption>-->
 <section id="landing-spotlight">
 <table>
     <tbody>
@@ -75,7 +81,7 @@
     </tbody>
 </table>
 </section>
-<div>
+<section>
 <table id="landing-know-more">
     <tbody>
         <tr>
@@ -98,35 +104,33 @@
         </tr>
     </tbody>
 </table>
-</div>
-<div id="landing-about-us">
+</section>
+<section id="landing-about-us">
     <h3>About us</h3>
     <h4>Confidentiality agreements</h4>
     <div>
-        <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="" class="about-us-img1"></span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ab a, in, deleniti voluptate.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="" class="about-us-img1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         Consequuntur impedit qui nam excepturi reiciendis optio voluptatibus laudantium perferendis!</p>
+        </span>
+        <span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo accusamus omnis labore quod
+        temporibus voluptate voluptas in? Esse nobis debitis voluptatem iusto enim earum, sapiente dolor. Eligendi, ex expedita!</p>
+        <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt="" class="about-us-img2"></p>
+        </span>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ab a, in, deleniti voluptate.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Consequuntur impedit qui nam excepturi reiciendis optio voluptatibus laudantium perferendis!</p>
-        <span><img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt="" class="about-us-img2"></p></span>
-    </div>
-</div>
+</section>
 <section id="landing-form">
-<div>
-    <p><h3>Get system information</h3></p>
-</div>
-<form action="process.php" method="POST">
+    <h3>Get system information</h3>
+<form action="process.php" method="post">
     <div>
-        <p><label>First Name:</label></p>
-        <p><input type="text" name="firstName" placeholder="Click here to enter your name"></p>
+        <label>First Name:</label>
+        <input type="text" name="firstName" placeholder="Click here to enter your name">
     </div>
     <div>
-        <p><label>Email:</label></p>
-        <p><input type="email" name="email" placeholder="Click here to enter your Email"></p>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Click here to enter your Email">
     </div>
     <div>
         <label>Select contact area</label>
@@ -141,12 +145,12 @@
         <textarea name="message" placeholder="Click here to enter your message"></textarea>
     </div>
     <div>
-    <p><input type="submit" name="submit" value="Submit"></p>
+        <input type="submit" name="submit" value="Submit">
     </div>
 </form>
 </section>
 </div>
-<div>
+<section>
     <table id="landing-bottom-table">
         <tbody>
             <tr>
@@ -176,7 +180,7 @@
             </tr>
         </tbody>
     </table>
-</div>
+</section>
 </main>
 <footer>
     <div id="footer">
