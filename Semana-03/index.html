@@ -11,27 +11,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<header>
-<section id="header">
-<input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" width="50" height="50" class="btn" class="menu" alt="open menu"/>
+<header id="header">
+<input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" width="50" height="50" class="menu-btn" alt="open menu"/>
 <a href="tutorials">Tutorials</a>
 |
 <a href="contact">Contact</a>
-<input type="text" name="Search" placeholder="Search"><button type = "button"><img src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" width="50" height="50" alt="search"></button>
-<button>Log in</button>
-<button>Sign up</button>
-</section>
+<input type="text" name="Search" placeholder="Search" class="search-bar"><button type="button"><img src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" width="50" height="50" alt="search" class="search-btn"></button>
+<button class="btn1">Log in</button>
+<button class="btn1">Sign up</button>
 </header>
-<aside>
-<div id="sidebar">
-<h2>Menu</h2>
+<aside id="sidebar">
+<h3>Menu</h3>
 <ol>
     <li><a href="history">History</a></li>
     <li><a href="about us">About Us</a></li>
     <li><a href="contact from">Contact Form</a></li>
     <li><a href="sources">Sources</a></li>
 </ol>
-<h2>Contact Us</h2>
+<h3>Contact Us</h3>
 <ol>
     <li>Lorem ipsum dolor sit amet,
     consectetur adipiscing elit.
@@ -42,22 +39,21 @@
     <li><a href="mailto:trackgenix@info.com">trackgenix@info.com</a></li>
     <li><a href="https://goo.gl/maps/NmShPij78EhV55TEA" target="_blank">1234 Somewhere Road #8254</p>
     <p>Nashville, TN 00000-0000</a></p></li>
-    <li><button>Get system information</button></li>
+    <li><button class="sidebar-btn">Get system information</button></li>
 </ol>
-</div>
 </aside>
 <main>
 <div id="body">
 <section id="logo">
-    <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" width="100" height="100" alt=""></td>
-    <p><h1>Trackgenix</h1></p>
-    <p><h2>Data Management</h2></p>
+    <span><img src="https://cdn.worldvectorlogo.com/logos/tether.svg" width="100" height="100" alt=""></span>
+    <h1>Trackgenix</h1>
+    <h2>Data Management</h2>
 </section>
         <div id="landing-general">
-        <p><img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt=""></p>
-        <p><alt=text>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
+        <span><img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt=""></span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
         sapiente ducimus architecto nulla voluptate dolorum nihil cupiditate eveniet.
-        Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?</p></alt>
+        Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?</p>
         </div>
 <section id="landing-spotlight">
 <table>
@@ -79,12 +75,12 @@
     </tbody>
 </table>
 </section>
-<section id="landing-know-more">
-<table>
+<div>
+<table id="landing-know-more">
     <tbody>
         <tr>
-            <td><h2>What can Tracgenix do for you?</h2></td>
-            <td><h2>Why choosing Trackgenix is a quality leap?</h2></td>
+            <td><h3>What can Tracgenix do for you?</h3></td>
+            <td><h3>Why choosing Trackgenix is a quality leap?</h3></td>
         </tr>
         <tr>
             <td><ol>
@@ -102,19 +98,26 @@
         </tr>
     </tbody>
 </table>
-</section>
-<section id="landing-about-us">
-    <h2>About us</h2>
-    <p><h3>Confidentiality agreements</h3></p>
-    <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt=""></p>
+</div>
+<div id="landing-about-us">
+    <h3>About us</h3>
+    <h4>Confidentiality agreements</h4>
+    <div>
+    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoixtLy-ItMGqrytvDksn0i9OTgIYOsL_X_RhDA87NlCUQ5ke4QQAQ3ZYBoOzcvPKqpc&usqp=CAU" alt="" class="about-us-img1"></span>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ab a, in, deleniti voluptate.
     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
     Consequuntur impedit qui nam excepturi reiciendis optio voluptatibus laudantium perferendis!</p>
-    <img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt=""></p>
-</section>
+    </div>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio ab a, in, deleniti voluptate.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Consequuntur impedit qui nam excepturi reiciendis optio voluptatibus laudantium perferendis!</p>
+    <span><img src="https://7wdata.be/wp-content/uploads/2016/12/data-management-2016s-hot-trends-and-what-to-watch-in-2017.png" alt="" class="about-us-img2"></p></span>
+    </div>
+</div>
 <section id="landing-form">
 <div>
-    <p><h2>Get system information</h2></p>
+    <p><h3>Get system information</h3></p>
 </div>
     <form action="process.php" method="POST">
 <div>
@@ -142,47 +145,47 @@
 </div>
     </form>
 </section>
-<section id="landing-bottom-table">
-<table>
-    <tbody>
-        <tr>
-            <td><h2>Products</h2></td>
-            <td><h2>Company</h2></td>
-            <td><h2>Support</h2></td>
-        </tr>
-         <tr>
-            <td><ol>
-            <li><a href="funcionalities">Funcionalities</a></li>
-            <li><a href="download">Download</a></li>
-            <li><a href="integration">Integration</a></li>
-            <li><a href="extras">Extras</a></li>
-            </ol></td>
-            <td><ol>
-            <li><a href="information">Information</a></li>
-            <li><a href="our clients">Our clients</a></li>
-            <li><a href="resources">Resources</a></li>
-            <li><a href="blog">Blog</a></li>
-            </ol><td>
-            <td><ol>
-            <li><a href="help">Help</a></li>
-            <li><a href="tutorials">Tutorials</a></li>
-            <li><a href="api">API</a></li>
-            <li><a href="contact">Contact</a></li>
-            </ol></td>    
-        </tr>
-    </tbody>
-</table>
-</section>
 </div>
+<div>
+    <table id="landing-bottom-table">
+        <tbody>
+            <tr>
+                <td><h3>Products</h3></td>
+                <td><h3>Company</h3></td>
+                <td><h3>Support</h3></td>
+            </tr>
+            <tr>
+                <td><ol>
+                <li><a href="funcionalities">Funcionalities</a></li>
+                <li><a href="download">Download</a></li>
+                <li><a href="integration">Integration</a></li>
+                <li><a href="extras">Extras</a></li>
+                </ol></td>
+                <td><ol>
+                <li><a href="information">Information</a></li>
+                <li><a href="our clients">Our clients</a></li>
+                <li><a href="resources">Resources</a></li>
+                <li><a href="blog">Blog</a></li>
+                </ol></td>
+                <td><ol>
+                <li><a href="help">Help</a></li>
+                <li><a href="tutorials">Tutorials</a></li>
+                <li><a href="api">API</a></li>
+                <li><a href="contact">Contact</a></li>
+                </ol></td>    
+            </tr>
+        </tbody>
+    </table>
+    </div>
 </main>
 <footer>
     <div id="footer">
     <section id="social-media">
-        <td><a href="linkedin"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt=""/></a>
-        <td><a href="twitter"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt=""/></a>
-        <td><a href="facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt=""/></a>
-        <td><a href="instagram"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTULUhZjZ8Y88PCtERA09YDloaWTCAEkS9-Q&usqp=CAU" alt=""/></a>
-        <td><a href="github"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFSIO_dsJJiOX3Sntwxpw6lUIJKI0ueBlRpcQ3q57xVOw4-bCAQ2eX0v_5v2sf5CIiNA&usqp=CAU" alt=""/></a>
+        <a href="linkedin"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEP6_ZqUdItJUMNAiUfH-ytlPuseYnOrLhNp8lPl6ViB_O1-Tz4n3jwbPlVkirF3Y3QU&usqp=CAU" alt=""/></a>
+        <a href="twitter"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73k3dFT_EfG0rqnbaKS2PxNOc1YjJjVWnY6-IaeAW9z2ITGbY1RQXqG9WhJAtgSgdsg0&usqp=CAU" alt=""/></a>
+        <a href="facebook"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZKT7Yleym993SA5GMZxdYhwHwV09j8f9yUP1NZKIBduaz9Mogz77BYsLnht0-0xHnI0&usqp=CAU" alt=""/></a>
+        <a href="instagram"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTULUhZjZ8Y88PCtERA09YDloaWTCAEkS9-Q&usqp=CAU" alt=""/></a>
+        <a href="github"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFSIO_dsJJiOX3Sntwxpw6lUIJKI0ueBlRpcQ3q57xVOw4-bCAQ2eX0v_5v2sf5CIiNA&usqp=CAU" alt=""/></a>
     </section>
     <div>
 <address>
