@@ -15,13 +15,20 @@
     a:hover{
         background-color:#808080;
     }
+    #body{
+        padding-left:22%;
+        margin-left:3%;
+        margin-right:3%;
+    }
     #header{
-        float:top;
+        top:0;
         background-color:#50A780;
         filter: drop-shadow(#fff);
         height:3%;
+        width:100%;
         text-align: center;
         overflow: auto;
+        z-index: 1;
     }
     .menu-btn{
         background-color: transparent;
@@ -33,41 +40,46 @@
         border-radius: 200px;
         background-color: #fff;
         border:none;
+        height:66%;
     }
-    .search.btn{
+    .search-btn img{
         border-radius: 200px;
         border:none;
+        width:42px;
+        height:42px;
     }
     .log-in-btn{
         border-radius: 200px;
         background-color: #fff;
         border:none;
+        width:3%;
+        height:66%;
     }
     .sign-up-btn{
         border-radius: 200px;
         background-color: #fff;
         border:none;
+        width:3%;
+        height:66%;
     }
     #sidebar{
-        float:left;
+        top:0;
+        left:0;
+        position: fixed;
+        z-index: 0;
         display: inline-block;
-        padding-top:3%;
-        padding-left:1%;
-        padding-bottom:21%;
+        padding:3%;
         height:fit-content;
         width:22%;
+        height:100%;
         background-image:linear-gradient(#50A780,#fff 80%);
         text-align: left;
         overflow: auto;
     }
     #sidebar button{
-        border-radius: 200px;
-        background-color:#49A37B;
-        border:none;
-    }
-    .sidebar-btn{
         border-radius:5px;
-        border:#000;
+        border-color:#000;
+        border:2px;
         background-color:#49A37B;
         color: #fff;
     }
@@ -78,13 +90,10 @@
     aside li{
         text-align: justify;
     }
-    #body{
-        align:center;
-        padding-left:22%;
-    }
     #logo{
-        margin-left:4%;
+        margin-left:10%;
         margin-top:2%;
+        margin-bottom:2%;
         display: block;
         text-align: justify;
     }
@@ -99,9 +108,15 @@
         display: block;
     }
     #landing-general{
+        text-align: justify;
+        text-overflow: auto;
+        margin-right:13%;
+        margin-bottom:2%;
     }
     #landing-spotlight{
         text-align: center;
+        margin-left:10%;
+        margin-right:10%;
     }
     #landing-know-more{
         text-align: center;
@@ -109,11 +124,16 @@
         table-layout:fixed;
         margin:auto;
         width: fit-content;
+        margin-left: 13%;
+        margin-right: 13%;
     }
     #landing-about-us{
+        padding:2%;
         background-color:#E9E9E9;
         border-radius: 20px;
         text-align: justify;
+        margin-left: 13%;
+        margin-right: 13%;
     }
     #landing-about-us img{
         overflow:auto;
@@ -125,6 +145,8 @@
         height: 10%;
         padding: 10%;
         padding-top: 5%;
+        margin-left: 13%;
+        margin-right: 13%;
     }
     #landing-bottom-table{
         text-align: center;
@@ -137,9 +159,19 @@
     }
     #landing-bottom-table{
         color:#DBDBDB;
+        border-collapse: collapse;
+        z-index:1;
+        position:relative;
+    }
+    #landing-bottom-table tr{ 
+        border: none;
+    }
+    #landing-bottom-table td {
+        border-right: solid 1px #000; 
+        border-left: solid 1px #000;
     }
     #footer{
-        align:bottom;
+        box-align:bottom;
         height:10%;
         text-align: center;
     }
