@@ -23,7 +23,6 @@
     #header{
         top:0;
         background-color:#50A780;
-        filter: drop-shadow(#fff);
         height:3%;
         width:100%;
         text-align: center;
@@ -65,7 +64,6 @@
     #sidebar{
         top:0;
         left:0;
-        position: fixed;
         z-index: 0;
         display: inline-block;
         padding:3%;
