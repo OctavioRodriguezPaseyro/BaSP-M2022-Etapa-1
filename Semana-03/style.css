@@ -15,10 +15,16 @@
     a:hover{
         background-color:#808080;
     }
+    aside li{
+        text-align: justify;
+        margin: 3% 0;
+    }
     #body{
         padding-left:22%;
         margin-left:3%;
         margin-right:3%;
+        width:78%;
+        height:76%;
     }
     #header{
         top:0;
@@ -29,48 +35,15 @@
         overflow: auto;
         z-index: 1;
     }
-    .menu-btn{
-        background-color: transparent;
-        border:none;
-        width:42px;
-        height:42px;
-    }
-    .search-bar{
-        border-radius: 200px;
-        background-color: #fff;
-        border:none;
-        height:66%;
-    }
-    .search-btn img{
-        border-radius: 200px;
-        border:none;
-        width:42px;
-        height:42px;
-    }
-    .log-in-btn{
-        border-radius: 200px;
-        background-color: #fff;
-        border:none;
-        width:3%;
-        height:66%;
-    }
-    .sign-up-btn{
-        border-radius: 200px;
-        background-color: #fff;
-        border:none;
-        width:3%;
-        height:66%;
-    }
     #sidebar{
         top:0;
         left:0;
         z-index: 0;
         display: inline-block;
         padding:3%;
-        height:fit-content;
         width:22%;
         height:100%;
-        background-image:linear-gradient(#50A780,#fff 80%);
+        background:linear-gradient(#50A780,#fff 80%);
         text-align: left;
         overflow: auto;
     }
@@ -84,9 +57,6 @@
     #sidebar h3{
         text-decoration: underline;
         text-decoration-color:#ED2626;
-    }
-    aside li{
-        text-align: justify;
     }
     #logo{
         margin-left:10%;
@@ -160,6 +130,7 @@
         border-collapse: collapse;
         z-index:1;
         position:relative;
+        height:11%;
     }
     #landing-bottom-table tr{ 
         border: none;
@@ -177,4 +148,46 @@
         width:  50px;
         height: 50px;
         object-fit: cover;
+    }
+    .menu-btn{
+        background-color: transparent;
+        border:none;
+        width:42px;
+        height:42px;
+    }
+    .search-bar{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+        height:66%;
+    }
+    .search-btn img{
+        border-radius: 200px;
+        border:none;
+        width:42px;
+        height:42px;
+    }
+    .login-btn{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+        width:3%;
+        height:66%;
+    }
+    .signup-btn{
+        border-radius: 200px;
+        background-color: #fff;
+        border:none;
+        width:3%;
+        height:66%;
+    }
+    .about-us-img1{
+        position: relative;
+        margin-left:0%;
+    }
+    .about-us-img2{
+        position: relative;
+        height:20%;
+        width: 50%;
+        margin-left:50%;
     }
