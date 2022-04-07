@@ -1,12 +1,79 @@
 header{
     display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #50A780;
+}
+header div input[type='image']{
+    height:10%;
+    width:10%;
+}
+aside{
+    display:flex;
     flex-direction:column;
     justify-content:space-between;
-    align-items:center;        
+    align-items:flex-start;
+    background:linear-gradient(#50A780,#fff 80%);
+    width:22%;
 }
 main{
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #fff;
+}
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #fff;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+}
+.search-field{
+    background:#fff;
+}
+.search-submit{
+    object-fit: cover;
+}
+.logo{
+    display:flex;
+    justify-content:flex-start;
+    align-self:flex-start;
+}
+.logo img{
+    height:5%;
+    width:5%;
+}
+.general{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.spotlight{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.know-more{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+.list{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.extras{
+    display:flex;
+    flex-direction:row;
     justify-content:space-between;
     align-items:center;
 }
