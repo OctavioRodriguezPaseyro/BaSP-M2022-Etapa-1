@@ -22,12 +22,12 @@ The .html file will only have
 ```
 
 >## Week 3: .css file
-_This week will work on the visual aspects of the landing page using a CSS stylesheet and ._ 
+_This week will work on the visual aspects of the landing page using a CSS stylesheet._ 
 ```
-The style will be applied to a copy of our previous index.html.
+The style will be applied to a copy of our previous index.html, from which modifications were made.
 ```
 >## Week 4: .css file
 _This week will work on the visual aspects of the landing page using CSS Flexbox._ 
 ```
-The style will be applied to a copy of our previous index.html.
+The style will be applied to a copy of our previous index.html, from which modifications were made.
 ```

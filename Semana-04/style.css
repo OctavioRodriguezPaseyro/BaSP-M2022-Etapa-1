@@ -1,8 +1,28 @@
+body{
+    font: 100%/1.5 Helvetica, sans-serif; 
+    padding:0;
+    margin:0;
+}
+h1{
+    font: 300%/2 Helvetica, sans-serif, bolder
+}
+h2{
+    font: 250%/2 Helvetica, sans-serif, bolder
+}
+h3{
+    font: 200%/2 Helvetica, sans-serif, bolder
+}
+h3{
+    font: 150%/2 Helvetica, sans-serif, bold
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+a:hover{
+    background-color:#808080;
+}
 header{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-items:center;
     background-color: #50A780;
 }
 header div input[type='image']{
@@ -10,26 +30,38 @@ header div input[type='image']{
     width:10%;
 }
 aside{
+    float:left;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:flex-start;
     background:linear-gradient(#50A780,#fff 80%);
     width:22%;
+    height:100%;
+    text-align: justify;
 }
 main{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
-    background-color: #fff;
 }
 footer{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    margin:auto;
+    padding:auto;
+}
+.top-nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
     align-items:center;
-    background-color: #fff;
 }
 .search-bar{
     display: flex;
@@ -47,6 +79,8 @@ footer{
     align-self:flex-start;
 }
 .logo img{
+    display:flex;
+    align-self:center;    
     height:5%;
     width:5%;
 }
@@ -59,6 +93,12 @@ footer{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+    align-self: center;
+    text-align: center;
+}
+.spotlight img{
+    height:80%;
+    width:100%;
 }
 .know-more{
     display:flex;
@@ -66,14 +106,46 @@ footer{
     justify-content:space-between;
     align-items:center;
 }
+.about-us{
+    display:flex;
+    flex-direction:column;
+    background-color:#E9E9E9;
+    border-radius: 20px;
+    text-align: justify;
+    overflow: hidden;
+}
+.about-us-img1{
+    position: relative;
+    float:left;
+}
+.about-us-img2{
+    position: relative;
+    float:right;
+}
 .list{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
 }
+.system-information form{
+    display:flex;
+    flex-direction:column;
+}
 .extras{
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
+    background-color: #50A780;
+}
+.social-media img{
+    height:50px;
+    width:50px;
+}
+.footnote{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
 }
