@@ -24,17 +24,23 @@ a:hover{
 }
 header{
     background-color: #50A780;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    height:auto;
 }
 header div input[type='image']{
     height:10%;
     width:10%;
 }
 aside{
-    float:left;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
-    align-items:flex-start;
+    justify-content:space-around;
+    align-items:center;
+    float:left;
     background:linear-gradient(#50A780,#fff 80%);
     width:22%;
     height:100%;
@@ -54,14 +60,9 @@ footer{
     text-align: center;
 }
 .container{
+    width:80%;
     margin:auto;
     padding:auto;
-}
-.top-nav{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    align-self:center;
 }
 .search-bar{
     display: flex;
@@ -89,6 +90,11 @@ footer{
     flex-direction:row;
     justify-content:space-around;
 }
+.general img{
+    float:left;
+    height:100%;
+    width:100%;
+}
 .spotlight{
     display:flex;
     flex-direction:row;
@@ -115,21 +121,29 @@ footer{
     overflow: hidden;
 }
 .about-us-img1{
-    position: relative;
     float:left;
 }
 .about-us-img2{
-    position: relative;
     float:right;
+    height:50%;
+    width:50%;    
 }
 .list{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
 }
-.system-information form div{
+.system-information{
+    width: 78%;
+    height: 10%;
+    padding: 10%;
+    padding-top: 5%;
+    margin: 0% 13%;
+
+}
+.system-information form{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: space-around;
     align-self:center;
 }
@@ -139,15 +153,10 @@ footer{
     justify-content:space-around;
     align-self:center;
     background-color: #50A780;
+    width:100%;
 }
 .social-media img{
     height:50px;
     width:50px;
-}
-.footnote{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-self: center;
-    text-align: center;
+    filter: grayscale(200%);
 }
