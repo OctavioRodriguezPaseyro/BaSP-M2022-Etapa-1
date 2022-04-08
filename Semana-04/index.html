@@ -25,7 +25,7 @@
                     <input type="image" src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" class="search-submit" aria-label="Submit search"/>
                 </form>
             </div>
-            <div aria-label="Access">
+            <div class=access aria-label="Access">
                 <button type="button">Log in</button>
                 <button type="button">Sign up</button>
             </div>
@@ -66,14 +66,15 @@
                         Integer sollicitudin sem eget
                         nibh finibus ullamcorper.
                     </li>
-                    <li>
-                        <a href="mailto:trackgenix@info.com">trackgenix@info.com</a>
-                    </li>
-                    <li>
-                        <address>
+                    <address>
+                        <li>
+                            <a href="mailto:trackgenix@info.com">trackgenix@info.com</a>
+                        </li>
+                        <hr>
+                        <li>
                             <a href="https://goo.gl/maps/NmShPij78EhV55TEA" target="_blank">1234 Somewhere Road #8254, Nashville, TN 00000-0000</a>
-                        </address>
-                    </li>
+                        </li>
+                    </address>
                 </ol>
             </div>
             <div aria-label="Information button">
@@ -85,15 +86,21 @@
                 <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="">
                 <span>
                     <h1>TRACKGENIX</h1>
-                    <h2>DATA MANAGEMENT</h2>
+                    <h2>DATA&nbsp;MANAGEMENT</h2>
                 </span>
             </section>
             <article class="container general" aria-label="Introduction">
                 <img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt="">
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, 
                     sapiente ducimus architecto nulla voluptate dolorum nihil cupiditate eveniet.
                     Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?
+                    Aenean non viverra lectus, id consequat ipsum. Quisque quis molestie nibh.
+                    Nullam ut urna lacus. Donec eget elit ac elit convallis aliquet.
+                    Curabitur id urna leo. Proin sed semper est. Integer sodales rhoncus convallis.
+                    In pulvinar lorem eget eros consectetur volutpat, ut elementum nibh metus sit amet ipsum.
+                    Phasellus iaculis volutpat mollis. Duis vehicula, tellus sit amet porttitor venenatis,
+                    leo justo accumsan neque.
                 </p>
             </article>
             <section class="container spotlight" aria-label="Spotlight">
@@ -193,21 +200,23 @@
             </section>
             <section class="container system-information" aria-label="Get system information">
                 <h3 aria-hidden="true">Get system information</h3>
+                <hr>
                 <form aria-label="Form">
-                    <div aria-label="Mandatory fields">
+                    <div class="form-left" aria-label="Mandatory fields">
                         <label>First Name:</label>
                         <input type="text" name="firstName" placeholder="Click here to enter your name">
                         <label>Email:</label>
                         <input type="email" name="email" placeholder="Click here to enter your Email">
                         <label>Select contact area:</label>
-                        <select>
+                        <select required>
+                            <option value="">Select area</option>
                             <option value="HR">Human Resources</option>
                             <option value="ITS">IT Support</option>
                             <option value="Commercial">Commercial department</option>
                             <option value="Others">Others</option>
                         </select>
                     </div>
-                    <div aria-label="Enter message and submit">
+                    <div class="form-right" aria-label="Enter message and submit">
                         <textarea name="message" placeholder="Click here to enter your message"></textarea>
                         <input type="submit" value="Submit">
                     </div>
