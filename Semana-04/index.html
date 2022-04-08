@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix | Home</title>
-        <link rel="stylesheet" type="text/css" href="reset.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
     <body>
         <header aria-label="Header">
             <div aria-label="Burguer button">
-                <input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" alt="open menu"/>
+                <input type="image" src="https://freeiconshop.com/wp-content/uploads/edd/menu-rounded-solid.png" alt="open menu" class="burguer-btn"/>
             </div>
             <div aria-label="Navigation">
                 <a href="/tutorials">Tutorials</a>
@@ -20,7 +20,7 @@
             </div>
             <div>
                 <form class="search-bar" aria-label="Search">
-                    <input type="text" placeholder="Search" name="search-field" aria-label="Search bar">
+                    <input type="text" placeholder="Search" class="search-field" aria-label="Search bar">
                     <input type="image" src="https://icon-library.com/images/search-magnifying-glass-icon/search-magnifying-glass-icon-3.jpg" class="search-submit" aria-label="Submit search"/>
                 </form>
             </div>
@@ -31,18 +31,22 @@
         </header>
         <aside aria-label="Sidebar">
             <div>
+                <h3 aria-hidden="true">Menu</h3>
+                <hr>
                 <nav role="navigation" aria-label="Menu">
-                    <h3 aria-hidden="true">Menu</h3>
                     <ol>
                         <li>
                             <a href="/history">History</a>
                         </li>
+                        <hr>
                         <li>
                             <a href="/about-us">About Us</a>
                         </li>
+                        <hr>
                         <li>
                             <a href="/contact-from">Contact Form</a>
                         </li>
+                        <hr>
                         <li>
                             <a href="/sources">Sources</a>
                         </li>
@@ -51,6 +55,7 @@
             </div>
             <div aria-label="Contact information">
                 <h3 aria-hidden="true">Contact Us</h3>
+                <hr>
                 <ol>
                     <li>
                         Lorem ipsum dolor sit amet,
@@ -75,21 +80,21 @@
             </div>
         </aside>
         <main aria-label="Main content">
-            <section id="landing-logo" aria-hidden="true" class="logo">
+            <section class="logo" aria-hidden="true">
                 <img src="https://cdn.worldvectorlogo.com/logos/tether.svg" alt="">
                 <span>
                     <h1>TRACKGENIX</h1>
                     <h2>DATA MANAGEMENT</h2>
                 </span>
             </section>
-            <section class="container general" aria-label="Introduction">
+            <article class="container general" aria-label="Introduction">
                 <img src="https://pazarlamaturkiye.com/wp-content/uploads/2018/05/Data-Management-Platform.png" alt="">
-                <article>
+                <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita,
                     sapiente ducimus architecto nulla voluptate dolorum nihil cupiditate eveniet.
                     Cumque ex facere unde vitae iste ea dignissimos veritatis impedit dolores reiciendis?
-                </article>
-            </section>
+                </p>
+            </article>
             <section class="container spotlight" aria-label="Spotlight">
                 <figure aria-label="Simplicity">
                     <a href="/simplicity">
@@ -187,7 +192,7 @@
             </section>
             <section class="container system-information" aria-label="Get system information">
                 <h3 aria-hidden="true">Get system information</h3>
-                <form class="system information system-information-form" aria-label="Form">
+                <form aria-label="Form">
                     <div aria-label="Mandatory fields">
                         <label>First Name:</label>
                         <input type="text" name="firstName" placeholder="Click here to enter your name">
@@ -226,6 +231,7 @@
                     </li>
                 </ol>
             </div>
+            <hr>
             <div class="list" aria-label="Company">  
                 <ol>
                     <h4>Company</h4>
@@ -243,6 +249,7 @@
                     </li>
                 </ol>
             </div>
+            <hr>
             <div class="list" aria-label="Support">
                 <ol>
                     <h4>Support</h4>
