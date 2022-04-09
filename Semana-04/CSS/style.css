@@ -44,7 +44,7 @@ header{
     height: 5%;
 }
 
-header div input[type='image']{
+header div input[type='image'], header form input[type='image']{
     height: 50px;
     width: 50px;
 }
@@ -387,22 +387,22 @@ footer{
     }
 
     .burguer-btn{
-        display: flex;
-        order: 1;        
+        order:1;
     }
+
     .search-bar{
-        display: flex;
-        order: 3;
+        order:3;
     }
+
     .search-submit{
         background-color: transparent;
         filter: invert(100%);
     }
-
+    
     .access{
-        display: flex;
-        order: 2;
+        order:2;
     }
+
     .logo{
         display: flex;
         flex-direction: row;
