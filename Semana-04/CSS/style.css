@@ -32,11 +32,11 @@ header{
     justify-content: space-around;
     align-items:center;
     width:100%;
-    height:7%;
+    height:80px;
 }
 header div input[type='image']{
-    height:10%;
-    width:10%;
+    height:50px;
+    width:50px;
 }
 header div button{
     border-radius:200px;
@@ -93,10 +93,6 @@ main{
     align-items:center;
 }
 footer{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
     text-align: center;
 }
 .container{
@@ -185,6 +181,9 @@ footer{
     align-self:center;
     padding: 5%;
 }
+.know-more h4{
+    margin-bottom:15px;
+}
 .about-us{
     display:flex;
     flex-direction:column;
@@ -195,15 +194,20 @@ footer{
     padding:3%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.about-us h4{
+    margin-bottom: 15px;
+}
 .about-us-img1{
     float:left;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin:0% 2% 2% 0%;
 }
 .about-us-img2{
     float:right;
     height:50%;
     width:50%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin:0% 0% 0% 2%;
 }
 .list{
     display:flex;
@@ -221,9 +225,6 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.system-information hr{
-    margin: 1% 0%;
-}
 .form-left{
     display:flex;
     flex-direction:column;
@@ -235,6 +236,7 @@ footer{
 }
 .system-information input{
     border-color: #7B61FF;
+    border-style:solid;
     border-radius:4px;
     font: 100%/1.5 Helvetica, sans-serif;
 }
@@ -242,16 +244,19 @@ footer{
     border-color: #7B61FF;
     border-radius:4px;
     background-color: #fff;
+    border-style:solid;
     font: 100%/1.5 Helvetica, sans-serif;
     width: 330px;
-    height: 70px;    
+    height: 50px;
 }
 .system-information textarea{
     border-color: #7B61FF;
+    border-style:solid;
     border-radius:4px;
     font: 100%/1.5 Helvetica, sans-serif;
     width: 430px;
     height: 240px;
+    margin-top: 75px;
 }
 .system-information input[type=submit]{
     background-color:#AACE9B;
