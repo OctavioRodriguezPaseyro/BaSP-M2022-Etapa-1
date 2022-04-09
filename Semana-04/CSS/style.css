@@ -6,11 +6,11 @@ body{
 }
 
 h1{
-    font: 300%/1.5 Helvetica, sans-serif, bolder;
+    font: 250%/1.5 Helvetica, sans-serif, bolder;
 }
 
 h2{
-    font: 250%/1.25 Helvetica, sans-serif, bolder;
+    font: 225%/1.25 Helvetica, sans-serif, bolder;
 }
 
 h3{
@@ -40,7 +40,8 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    width: 100%;
+    height: 5%;
 }
 
 header div input[type='image']{
@@ -158,16 +159,18 @@ footer{
 /*to be fixed*/
 .logo{
     display: flex;
-    justify-content: row;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 3%;
 }
 
 .logo img{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-self: center;
-    width:100%;
+    width: 60px;
+    height: 60px;
 }
 
 .logo div{
@@ -234,7 +237,6 @@ footer{
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
-    padding: 2%;
     margin: 3%;
 }
 
@@ -400,13 +402,19 @@ footer{
     .access{
         display: flex;
         order: 2;
-        display: flex;
     }
-
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     .general{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
     }
 
     .spotlight{
