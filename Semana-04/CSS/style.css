@@ -113,9 +113,10 @@ aside address hr{
 }
 
 main{
-    display: grid;
-    grid-template-rows: repeat(auto-fill, 1fr);
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer{
@@ -219,7 +220,7 @@ footer{
     align-self: center;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
     width: 100%;
 }
 
@@ -238,7 +239,7 @@ footer{
     display: flex;
     justify-content: center;
     align-self: center;
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
 }
 
 .know-more div{
@@ -251,7 +252,7 @@ footer{
     text-align: justify;
     overflow: hidden;
     padding: 2%;
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -265,10 +266,10 @@ footer{
 
 .about-us-img2{
     float: right;
-    width: 270px;
-    height: 125px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 1%;
+    width: 270px;
+    height: 125px;
 }
 
  .about-us p{
@@ -276,29 +277,33 @@ footer{
  }
 
 .system-information{
+    display: flex;
+    flex-direction: column;
     color: #373867;
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
+    width: 60%
 }
 
 .system-information hr{
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0% 0% 0%;
 }
 
 .system-information form{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 
 .form-left{
     display: flex;
     flex-direction: column;
+    margin-right: 1%;
 }
 
 .form-right{
     display: flex;
     flex-direction: column;
+    margin-left: 1%;
 }
 
 .system-information input{
