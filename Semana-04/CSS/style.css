@@ -2,7 +2,6 @@ body{
     font: 100%/1.5 Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    overflow-x:hidden;
 }
 
 h1{
@@ -62,7 +61,7 @@ aside{
     justify-content: space-around;
     float: left;
     background: linear-gradient(#50A780,#fff 80%);
-    width: 400px;
+    width: 20%;
     height: auto;
     text-align: justify;
 }
@@ -114,6 +113,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
 }
 
 footer{
@@ -198,7 +198,7 @@ footer{
 }
 
 .general p{
-    margin-right: 5%;
+    margin-right:5%;
     text-align: justify;
 }
 
@@ -346,7 +346,6 @@ footer{
     background-color: #50A780;
     width: 100%;
     padding: 25px 0%;
-    margin: 3% 0%;
 }
 
 .extras a{
@@ -363,7 +362,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 3%;
+    margin: 3%
 }
 
 .social-media img{
@@ -373,6 +372,10 @@ footer{
 }
 
 @media(max-width:768px){
+    main{
+        width: 100%;
+    }
+
     aside,
     .system-information{
         display: none;
@@ -404,6 +407,10 @@ footer{
         margin-top: 0%;
         width: 330px;
         height: 240px;
+    }
+
+    .general p{
+        margin-right: 3%;
     }
 
     .tablet-content{
@@ -463,6 +470,14 @@ footer{
 }
 
 @media(max-width:480px){
+    body{
+        overflow-x:hidden;
+    }
+
+    main{
+        width: 100%;
+    }
+
     aside,
     .system-information,
     header nav,
@@ -515,6 +530,7 @@ footer{
 
     .general p{
         flex:1;
+        margin: 0% 3%;
     }
 
     .tablet-content{
