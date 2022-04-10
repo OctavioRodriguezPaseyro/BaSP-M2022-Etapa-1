@@ -5,10 +5,6 @@ body{
     overflow-x:hidden;
 }
 
-body h4{
-    margin-bottom: 2%;
-}
-
 h1{
     font: 250%/1.5 Helvetica, sans-serif, bolder;
 }
@@ -48,7 +44,8 @@ header{
     height: auto;
 }
 
-header div input[type='image'], header form input[type='image']{
+header div input[type='image'],
+header form input[type='image']{
     height: 50px;
     width: 50px;
 }
@@ -376,7 +373,8 @@ footer{
 }
 
 @media(max-width:768px){
-    aside , .system-information{
+    aside,
+    .system-information{
         display: none;
     }
 
@@ -465,7 +463,10 @@ footer{
 }
 
 @media(max-width:480px){
-    aside, .system-information, header nav, .search-field{
+    aside,
+    .system-information,
+    header nav,
+    .search-field{
         display: none;
     }
 
