@@ -171,22 +171,10 @@ footer{
 }
 
 .logo img{
-    display: flex;
-    flex-direction: row;
     align-self: center;
     width: 60px;
     height: 60px;
-}
-
-.logo div{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.logo div h1, .logo div h2{
-    display: flex;
-    align-items: center;
+    margin-left: 5%;
 }
 
 .general{
@@ -195,13 +183,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin: 3%;
-    padding: 2%;
     width: 100%;
 }
 
 .general img{
-    display: flex;
-    justify-content: flex-start;
     width: 630px;
     height: 330px;
     margin: 3%;
@@ -209,8 +194,16 @@ footer{
 }
 
 .general p{
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.tablet-content{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .spotlight{
@@ -218,7 +211,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
-    flex-wrap: wrap-reverse;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 3%;
@@ -228,7 +220,6 @@ footer{
     background-color: #EFE7E7;
     width: 109px;
     height: 107px;
-    margin: 2%;
 }
 
 .spotlight img{
@@ -241,7 +232,6 @@ footer{
     display: flex;
     justify-content: center;
     align-self: center;
-    flex-wrap: wrap;
     margin: 3%;
 }
 
@@ -281,14 +271,7 @@ footer{
     margin: 0% 0% 0% 2%;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .system-information{
-    padding: 25px;
     margin: 0% 13%;
     color: #373867;
 }
@@ -413,6 +396,9 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+    .know-more{
+        flex-wrap: wrap;
+    }
 
     .spotlight{
         order:2;
@@ -421,32 +407,29 @@ footer{
 
     .spotlight figure:nth-child(1){
         display: flex;
-        order: 3;
+        order: 5;
     }
 
     .spotlight figure:nth-child(2){
         display: flex;
-        order: 5;
+        order: 1;
     }
 
     .spotlight figure:nth-child(3){
         display: flex;
-        order: 1;
+        order: 4;
     }
 
     .spotlight figure:nth-child(4){
         display: flex;
-        order: 4;
+        order: 2;
     }
 
     .spotlight figure:nth-child(5){
         display: flex;
-        order: 2;
+        order: 3;
     }
 
-    .know-more{
-        order:1;
-    }
     .about-us-img1{
         width: 130px;
         height: 100px;
@@ -473,6 +456,7 @@ footer{
 
     .search-submit{
         background-color: transparent;
+        border-style: hidden;
         filter: invert(100%);
     }
     
@@ -485,6 +469,10 @@ footer{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .logo img{
+        margin:0%;
     }
 
     .general{
@@ -500,7 +488,14 @@ footer{
         height: 240px;
     }
     .general p{
-        padding:4%;
+        margin: 5%;
+    }
+
+    .tablet-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .spotlight{
@@ -510,31 +505,27 @@ footer{
     }
 
     .spotlight figure:nth-child(1){
-        display: flex;
         order: 5;
     }
 
     .spotlight figure:nth-child(2){
-        display: flex;
         order: 1;
     }
 
     .spotlight figure:nth-child(3){
-        display: flex;
         order: 4;
     }
 
     .spotlight figure:nth-child(4){
-        display: flex;
         order: 2;
     }
 
     .spotlight figure:nth-child(5){
-        display: flex;
         order: 3;
     }
 
     .know-more{
+        flex-wrap: wrap;
         text-align: center;
     }
 
