@@ -2,6 +2,7 @@ body{
     font: 100%/1.5 Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x:hidden;
 }
 
 body h4{
@@ -126,9 +127,6 @@ footer{
 }
 
 .container{
-    width: 80%;
-    margin: auto;
-    padding: auto;
     overflow: hidden;
 }
 
@@ -140,6 +138,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1% 0%;
 }
 
 .search-field{
@@ -164,8 +163,8 @@ footer{
 }
 
 .access button{
-    width: 90px;
-    height: 25px;
+    width: 100px;
+    height: 50px;
     margin: 0% 3%;
 }
 
@@ -216,17 +215,17 @@ footer{
 .spotlight{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 3%;
+    width: 100%;
 }
 
 .spotlight figure{
     background-color: #EFE7E7;
-    width: 109px;
-    height: 107px;
+    margin: 2%;
 }
 
 .spotlight img{
@@ -259,16 +258,22 @@ footer{
 .about-us-img1{
     float: left;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 0% 2% 2% 0%;
+    margin: 1%;
+    width: 270px;
+    height: 125px;
 }
 
 .about-us-img2{
     float: right;
-    height: 50%;
-    width: 50%;
+    width: 270px;
+    height: 125px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 2% 0% 0% 2%;
+    margin: 1%;
 }
+
+ .about-us p{
+    margin: 1%;
+ }
 
 .system-information{
     color: #373867;
@@ -386,8 +391,14 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .general{
+        display: flex;
+        align-items: flex-start;
+        margin-top:3%;
+    }
 
     .general img{
+        margin-top: 0%;
         width: 330px;
         height: 240px;
     }
@@ -403,6 +414,11 @@ footer{
     }
 
     .spotlight{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        text-align: center;
         order:2;
         flex-wrap: wrap;
     }
@@ -444,9 +460,6 @@ footer{
 }
 
 @media(max-width:480px){
-    body{
-        overflow-x:hidden;
-    }
     aside, .system-information, header nav, .search-field{
         display: none;
     }
@@ -491,9 +504,11 @@ footer{
     .general img{
         width: 330px;
         height: 240px;
+        flex:1;
     }
+
     .general p{
-        margin: 5%;
+        flex:1;
     }
 
     .tablet-content{
