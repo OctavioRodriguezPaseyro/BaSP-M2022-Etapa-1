@@ -2,7 +2,10 @@ body{
     font: 100%/1.5 Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    overflow-x:hidden;
+}
+
+body h4{
+    margin-bottom: 2%;
 }
 
 h1{
@@ -41,7 +44,7 @@ header{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 7%;
+    height: auto;
 }
 
 header div input[type='image'], header form input[type='image']{
@@ -84,6 +87,7 @@ aside hr{
     background-color: #ED2626;
     border: none;
     height: 2px;
+    margin: 2% 0% 2% 0%;
 }
 
 aside nav{
@@ -108,13 +112,16 @@ aside address hr{
 }
 
 main{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    align-items: start;
+}
+
+footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-footer{
     text-align: center;
 }
 
@@ -167,7 +174,7 @@ footer{
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    margin: 3%;
+    margin-top: 3%;
 }
 
 .logo img{
@@ -182,7 +189,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 3%;
+    margin: 0% 3% 3% 3%;
     width: 100%;
 }
 
@@ -239,10 +246,6 @@ footer{
     margin: 2%;
 }
 
-.know-more h4{
-    margin-bottom: 15px;
-}
-
 .about-us{
     background-color: #E9E9E9;
     border-radius: 20px;
@@ -251,10 +254,6 @@ footer{
     padding: 2%;
     margin: 3%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.about-us h4{
-    margin-bottom: 15px;
 }
 
 .about-us-img1{
@@ -268,25 +267,28 @@ footer{
     height: 50%;
     width: 50%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 0% 0% 0% 2%;
+    margin: 2% 0% 0% 2%;
 }
 
 .system-information{
-    margin: 0% 13%;
     color: #373867;
+    margin: 3%;
+}
+
+.system-information hr{
+    margin: 2% 0% 2% 0%;
 }
 
 .system-information form{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .form-left{
     display: flex;
     flex-direction: column;
-    margin-right: 3%;
 }
 
 .form-right{
@@ -358,8 +360,8 @@ footer{
 }
 
 .social-media img{
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     filter: grayscale(200%);
 }
 
@@ -442,6 +444,9 @@ footer{
 }
 
 @media(max-width:480px){
+    body{
+        overflow-x:hidden;
+    }
     aside, .system-information, header nav, .search-field{
         display: none;
     }
@@ -504,6 +509,10 @@ footer{
         flex-wrap: wrap;
     }
 
+    .spotlight figure{
+        margin: 2%;
+    }
+
     .spotlight figure:nth-child(1){
         order: 5;
     }
@@ -537,5 +546,9 @@ footer{
     .about-us-img2{
         width: 250px;
         height: 100px;
+    }
+    .social-media img{
+        width: 30px;
+        height: 30px;
     }
 }
