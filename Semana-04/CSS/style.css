@@ -156,7 +156,6 @@ footer{
     margin: 0% 3%;
 }
 
-/*to be fixed*/
 .logo{
     display: flex;
     flex-direction: row;
@@ -183,29 +182,29 @@ footer{
     display: flex;
     align-items: center;
 }
-/*end*/
 
 .general{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin: 3%;
+    padding: 2%;
+    width: 100%;
 }
 
 .general img{
     display: flex;
     justify-content: flex-start;
-    width: 80%;
-    height: 80%;
-    margin-right: 3%;
+    width: 630px;
+    height: 330px;
+    margin: 3%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin: 2%;
 }
 
 .general p{
     display: flex;
     justify-content: flex-end;
-    width: fit-content;
 }
 
 .spotlight{
@@ -402,6 +401,10 @@ footer{
     .access{
         order:2;
     }
+    .access button{
+        width: 90px;
+        height: 25px;
+    }
 
     .logo{
         display: flex;
@@ -416,7 +419,10 @@ footer{
         align-items: center;
         text-align: center;
     }
-
+    .general img{
+        width: 330px;
+        height: 240px;
+    }
     .spotlight{
         display: flex;
         justify-content: space-around;
@@ -450,5 +456,15 @@ footer{
 
     .know-more{
         text-align: center;
+    }
+
+    .about-us-img1{
+        width: 130px;
+        height: 100px;
+    }
+
+    .about-us-img2{
+        width: 250px;
+        height: 100px;
     }
 }
