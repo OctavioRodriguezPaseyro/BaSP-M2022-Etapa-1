@@ -19,6 +19,7 @@ h3{
 
 h4{
     font: 150%/1 Helvetica, sans-serif, bold;
+    margin-bottom: 2%;
 }
 
 a{
@@ -221,6 +222,7 @@ footer{
     justify-content: center;
     align-self: center;
     text-align: center;
+    flex-wrap: wrap;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 0% 3% 3% 3%;
     width: 100%;
@@ -248,13 +250,17 @@ footer{
     margin: 2%;
 }
 
+.know-more li{
+    margin: 2% 0%;
+}
+
 .about-us{
     background-color: #E9E9E9;
     border-radius: 20px;
     text-align: justify;
     overflow: hidden;
     padding: 2%;
-    margin: 0% 3% 3% 3%;
+    margin: 3%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -351,6 +357,7 @@ footer{
     background-color: #50A780;
     width: 100%;
     padding: 25px 0%;
+    margin: 2% 0%;
 }
 
 .extras a{
@@ -402,6 +409,7 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    
     .general{
         display: flex;
         align-items: flex-start;
@@ -435,7 +443,6 @@ footer{
         align-self: center;
         text-align: center;
         order:2;
-        flex-wrap: wrap;
     }
 
     .spotlight figure:nth-child(1){
@@ -479,12 +486,6 @@ footer{
         overflow-x:hidden;
     }
 
-    main{
-        width: 100%;
-    }
-
-    aside,
-    .system-information,
     header nav,
     .search-field{
         display: none;
@@ -508,13 +509,6 @@ footer{
         order:2;
     }
 
-    .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
     .logo img{
         margin:0%;
     }
@@ -536,6 +530,7 @@ footer{
     .general p{
         flex:1;
         margin: 0% 3%;
+        
     }
 
     .tablet-content{
@@ -548,7 +543,6 @@ footer{
     .spotlight{
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
     }
 
     .spotlight figure{
@@ -576,7 +570,6 @@ footer{
     }
 
     .know-more{
-        flex-wrap: wrap;
         text-align: center;
     }
 
