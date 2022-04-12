@@ -76,16 +76,6 @@ aside div{
     padding: 10%;
 }
 
-aside div button{
-    border-radius: 5px;
-    background-color: #49A37B;
-    border-color: #000;
-    border-style: solid;
-    border-width: 1px;
-    width: 330px;
-    height: 50px;
-}
-
 aside hr{
     background-color: #ED2626;
     border: none;
@@ -114,6 +104,16 @@ aside address hr{
     height: 1px;
 }
 
+aside div button{
+    border-radius: 5px;
+    background-color: #49A37B;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    height: 50px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -131,6 +131,8 @@ footer{
 }
 
 .container{
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -204,7 +206,7 @@ footer{
 }
 
 .general p{
-    margin-right:5%;
+    margin:3%;
     text-align: justify;
 }
 
@@ -222,7 +224,6 @@ footer{
     justify-content: center;
     align-self: center;
     text-align: center;
-    flex-wrap: wrap;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: 0% 3% 3% 3%;
     width: 100%;
@@ -240,10 +241,7 @@ footer{
 }
 
 .know-more{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: 0% 3% 3% 3%;
+    width: 100%;
 }
 
 .know-more div{
@@ -285,21 +283,21 @@ footer{
  }
 
 .system-information{
-    display: flex;
-    flex-direction: column;
     color: #373867;
     margin: 0% 3% 3% 3%;
-    width: 60%
+    width: 100%;
 }
 
 .system-information hr{
     margin: 2% 0% 0% 0%;
+    width: 80%;
 }
 
 .system-information form{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 }
 
 .form-left{
@@ -422,10 +420,6 @@ footer{
         height: 240px;
     }
 
-    .general p{
-        margin-right: 3%;
-    }
-
     .tablet-content{
         display: flex;
         flex-direction: row;
@@ -433,7 +427,7 @@ footer{
         align-items: center;
     }
     .know-more{
-        flex-wrap: wrap;
+        margin: 3%;
     }
 
     .spotlight{
@@ -528,9 +522,7 @@ footer{
     }
 
     .general p{
-        flex:1;
-        margin: 0% 3%;
-        
+        flex:1; 
     }
 
     .tablet-content{
@@ -570,6 +562,8 @@ footer{
     }
 
     .know-more{
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
