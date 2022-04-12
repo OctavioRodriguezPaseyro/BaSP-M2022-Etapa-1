@@ -80,7 +80,7 @@ aside hr{
     background-color: #ED2626;
     border: none;
     height: 2px;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0%;
 }
 
 aside nav{
@@ -241,6 +241,9 @@ footer{
 }
 
 .know-more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 
@@ -296,6 +299,7 @@ footer{
 .system-information form{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
