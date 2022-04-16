@@ -11,7 +11,7 @@ Crear una variable “Age” que contenga un número entero entre 0 y 100 y mues
 
 var randomNum=Math.random()
 randomNum >= 0.5 ? alert("Greater than or equal to 0.5") : alert("Lower than 0.5")
-console.log("4. a.:" , randomNum)
+console.log("4. a.: Random number between 0 and 1:" , randomNum)
 
 var age=Math.round(Math.random()*(0 , 100))
 
@@ -37,4 +37,4 @@ else{
     alert("Anciano")
 }
 
-console.log("4. b." , age)
+console.log("4. b.: Random whole number between 0 and 100:" , age)
