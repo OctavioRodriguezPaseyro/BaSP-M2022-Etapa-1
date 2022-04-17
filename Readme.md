@@ -31,3 +31,8 @@ _This week will work on the visual aspects of the landing page using CSS Flexbox
 ```
 The style will be applied to a copy of our previous index.html, from which modifications were made.
 ```
+>## Week 5: .js file
+_This week will work on JS exercices._ 
+```
+The exercices will be made on a blank index.html.
+```
