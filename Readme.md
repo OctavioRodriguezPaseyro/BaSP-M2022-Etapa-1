@@ -1,4 +1,4 @@
-# ReadMe for desktop Landing page 
+# BaSP Etapa 1 
 ## _Trackgenix_
 
 ``` 
@@ -26,11 +26,13 @@ _This week will work on the visual aspects of the landing page using a CSS style
 ```
 The style will be applied to a copy of our previous index.html, from which modifications were made.
 ```
+
 >## Week 4: .css file
 _This week will work on the visual aspects of the landing page using CSS Flexbox._ 
 ```
 The style will be applied to a copy of our previous index.html, from which modifications were made.
 ```
+
 >## Week 5: .js file
 _This week will work on JS exercices._ 
 ```
