@@ -1,0 +1,52 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: left;
+    background: linear-gradient(#50A780,#fff 80%);
+    width: 20%;
+    height: 2200px;
+    text-align: justify;
+}
+
+aside div{
+    padding: 10%;
+}
+
+aside hr{
+    background-color: #ED2626;
+    border: none;
+    height: 2px;
+    margin: 2% 0%;
+}
+
+aside nav{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+aside nav hr{
+    background-color: #CECACA;
+    border: none;
+    height: 1px;
+}
+
+aside address{
+    margin-top: 20%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+aside address hr{
+    background-color: #CECACA;
+    border: none;
+    height: 1px;
+}
+
+aside div button{
+    border-radius: 5px;
+    background-color: #49A37B;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    height: 50px;
+}
