@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix | Sign up</title>
+        <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/header.css">
+        <link rel="stylesheet" type="text/css" href="../styles/sign-up.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="../assets/favicon.ico">
+    </head>
+    <body>
+        <header aria-label="Header">
+            <div class="burguer-btn" aria-label="Burguer button">
+                <input type="image" src="../assets/burguer-button.png" alt="open menu"/>
+            </div>
+            <nav aria-label="Navigation">
+                <a href="/tutorials">Tutorials</a>&nbsp;|&nbsp;<a href="/contact">Contact</a>
+            </nav>
+            <form class="search-bar" aria-label="Search">
+                <input type="text" placeholder="Search" class="search-field" aria-label="Search bar">
+                <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
+            </form>
+            <div class=access aria-label="Home">
+                <button type="button" class="home-button">Home</button>
+            </div>
+        </header>
+        <main aria-label="Main content">
+            <section class="container logo" aria-hidden="true">
+                <img src="../assets/trackgenix-logo.svg" alt="">
+                <div>
+                    <h1>TRACKGENIX</h1>
+                    <h2>DATA&nbsp;MANAGEMENT</h2>
+                </div>
+            </section>
+            <section aria-label="Sign-up form">
+                <h3 aria-hidden="true">Sign up</h3>
+                <form aria-label="Enter your credentials">
+                    <label>First Name</label>
+                    <input required type="name" name="firstName" placeholder="Click here to enter your Email">
+                    <label>Last Name</label>
+                    <input required type="name" name="lastName" placeholder="Click here to enter your password">
+                    <label>Password</label>
+                    <input required type="password" name="password" placeholder="Password">
+                    <label>Confirm password</label>
+                    <input required type="password" name="passwordConfirm" placeholder="Confirm password">
+                    <label>Email</label>
+                    <input required type="email" name="email" placeholder="Email">
+                    <label>Confirm email</label>
+                    <input required type="email" name="emailConfirm" placeholder="Confirm email">
+                    <button type="button" class="home-button" aria-label="Click to validate and sign up">Sign up</button>
+                </form>
+            </section>
+        </main>
+        <footer aria-label="Footer">
+            <div class="container social-media" aria-label="Our social media">
+                <a href="https://www.linkedin.com/trackgenix" target="_blank"><img src="../assets/linkedin-logo.svg" alt="visit our linkedin"/></a>
+                <a href="https://www.twitter.com/trackgenix" target="_blank"><img src="../assets/twitter-logo.svg" alt="visit our twitter"/></a>
+                <a href="https://www.facebook.com/trackgenix" target="_blank"><img src="../assets/facebook-logo.svg" alt="visit our facebook"/></a>
+                <a href="https://www.instagram.com/trackgenix" target="_blank"><img src="../assets/instagram-logo.svg" alt="visit our instagram"/></a>
+                <a href="https://www.github.com/trackgenix" target="_blank"><img src="../assets/github-logo.png" alt="visit our github"/></a>
+            </div>
+            <div class="footer-address" aria-label="Copyright">
+                <address>
+                    <p>
+                        Montevideo, Uruguay
+                    </p>
+                    <p>
+                        Copyright 2022 Radium Rocket. All rights reserved.
+                    </p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

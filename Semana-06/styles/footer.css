@@ -1,0 +1,41 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.extras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    background-color: #50A780;
+    width: 100%;
+    padding: 25px 0%;
+    margin: 2% 0%;
+}
+
+.extras a{
+    color: #DBDBDB;
+}
+
+.extras hr{
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3%
+}
+
+.social-media img{
+    height: 35px;
+    width: 35px;
+    filter: grayscale(200%);
+}
