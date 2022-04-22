@@ -42,11 +42,6 @@ aside address hr{
 }
 
 aside div button{
-    border-radius: 5px;
-    background-color: #49A37B;
-    border-color: #000;
-    border-style: solid;
-    border-width: 1px;
     width: 100%;
     height: 50px;
 }

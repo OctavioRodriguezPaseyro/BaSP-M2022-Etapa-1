@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix | Log in</title>
         <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/header.css">
         <link rel="stylesheet" type="text/css" href="../styles/login.css">
         <link rel="stylesheet" type="text/css" href="../styles/footer.css">
@@ -27,7 +28,9 @@
                 <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
             </form>
             <div class=access aria-label="Home">
-                <button type="button" class="home-button">Home</button>
+                <button type="button" class="home-button"><a href="/views/index.html">
+                    <a href="index.html">Home</a>
+                </button>
             </div>
         </header>
         <main aria-label="Main content">
@@ -41,22 +44,16 @@
             <section class="container sign-in" aria-label="Sign in">
                 <h3 aria-hidden="true">Sign in</h3>
                 <form aria-label="Enter your credentials">
-                    <div class="form-left" aria-label="Mandatory fields">
-                        <label>Email</label>
-                        <input required type="email" name="email" placeholder="Click here to enter your Email">
-                        <label>Password</label>
-                        <input required type="password" name="fullName" placeholder="Click here to enter your password">
-                    </div>
-                    <div class="form-left" aria-label="Do you want the site to remember your credentials?">
-                        <input type="checkbox" value="lsRememberMe" class="rememberMe" aria-label="click here for 'yes'">
+                    <label>Email</label>
+                    <input required type="email" name="email" placeholder="Click here to enter your Email">
+                    <label>Password</label>
+                    <input required type="password" name="fullName" placeholder="Click here to enter your password">
+                    <span>
+                        <input type="checkbox" value="lsRememberMe" class="rememberMe" aria-label="Do you want the site to remember your credentials?">
                         <label>Remember me</label>
-                    </div>
-                    <div class="form-right" aria-label="Forgot your password?">
-                        <a href="/password-recovery">Forgot your password?</a>
-                    </div>
-                    <div>
-                        <button type="button">Log in</button>
-                    </div>
+                        <a href="password-recovery">Forgot your password?</a>
+                    </span>
+                    <button class="light-green-button" type="button">Log in</button>
                 </form>
             </section>
         </main>

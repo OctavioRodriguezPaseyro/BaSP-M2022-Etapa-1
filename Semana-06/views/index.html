@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix | Home</title>
         <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/header.css">
         <link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
         <link rel="stylesheet" type="text/css" href="../styles/landing.css">
@@ -28,8 +29,12 @@
                 <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
             </form>
             <div class=access aria-label="Access">
-                <button type="button" class="login-button">Log in</button>
-                <button type="button" class="signup-button">Sign up</button>
+                <button type="button" class="login-button">
+                    <a href="login.html">Log in</a>
+                </button>
+                <button type="button" class="signup-button">
+                    <a href="sign-up.html">Sign up</a>
+                </button>
             </div>
         </header>
         <aside aria-label="Sidebar">
@@ -80,7 +85,7 @@
                 </ol>
             </div>
             <div aria-label="Information button">
-                <button type="button" aria-label="Get system information">Get system information</button>
+                <button class="green-button" type="button" aria-label="Get system information">Get system information</button>
             </div>
         </aside>
         <main aria-label="Main content">
@@ -222,7 +227,7 @@
                     </div>
                     <div class="form-right" aria-label="Enter message and submit">
                         <textarea required name="message" placeholder="Click here to enter your message"></textarea>
-                        <input type="submit" value="Submit">
+                        <input class="light-green-button" type="submit" value="Submit">
                     </div>
                 </form>
             </section>

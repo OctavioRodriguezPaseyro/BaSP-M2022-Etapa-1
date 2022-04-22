@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix | Sign up</title>
         <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="../styles/header.css">
         <link rel="stylesheet" type="text/css" href="../styles/sign-up.css">
         <link rel="stylesheet" type="text/css" href="../styles/footer.css">
@@ -27,7 +28,9 @@
                 <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
             </form>
             <div class=access aria-label="Home">
-                <button type="button" class="home-button">Home</button>
+                <button type="button" class="home-button"><a href="/views/index.html">
+                    <a href="index.html">Home</a>
+                </button>
             </div>
         </header>
         <main aria-label="Main content">
@@ -38,7 +41,7 @@
                     <h2>DATA&nbsp;MANAGEMENT</h2>
                 </div>
             </section>
-            <section aria-label="Sign-up form">
+            <section class="container sign-up"aria-label="Sign-up form">
                 <h3 aria-hidden="true">Sign up</h3>
                 <form aria-label="Enter your credentials">
                     <label>First Name</label>
