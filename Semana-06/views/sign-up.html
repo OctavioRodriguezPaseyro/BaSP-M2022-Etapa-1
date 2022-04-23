@@ -27,7 +27,10 @@
                 <input type="text" placeholder="Search" class="search-field" aria-label="Search bar">
                 <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
             </form>
-            <div class=access aria-label="Home">
+            <div class=access aria-label="Go back">
+                <button type="button" class="login-button">
+                    <a href="login.html">Log in</a>
+                </button>
                 <button type="button" class="home-button"><a href="/views/index.html">
                     <a href="index.html">Home</a>
                 </button>
@@ -44,36 +47,48 @@
             <section class="container sign-up"aria-label="Sign-up form">
                 <h3 aria-hidden="true">Sign up</h3>
                 <form aria-label="Enter your credentials">
-                    <div>
-                        <span>
+                    <fieldset>
+                        <div>
                             <label>First Name</label>
-                            <input required type="name" name="firstName" placeholder="Click here to enter your First Name">
+                            <input required type="name" name="firstName" placeholder="Click here to type">
+                            <template>Should be at least 4 letters long</template>
                             <label>Last Name</label>
-                            <input required type="name" name="lastName" placeholder="Click here to enter your Last Name">
+                            <input required type="name" name="lastName" placeholder="Click here to type">
+                            <template>Should be at least 4 letters long</template>
                             <label>DNI</label>
-                            <input required type="number" name="DNI" placeholder="Click here to enter your DNI">
+                            <input required type="number" name="DNI" placeholder="Click here to type">
+                            <template>Should be at least 8 numbers long</template>
                             <label>Birthday</label>
-                            <input required type="date" name="birth" placeholder="Click here to enter your birthday">
+                            <input required type="date" name="birth" placeholder="Click here to type">
+                            <template>Invalid format</template>
                             <label>Phone number</label>
-                            <input required type="tel" name="phone" placeholder="Click here to enter your phone number">
+                            <input required type="tel" name="phone" placeholder="Click here to type">
+                            <template>Should be 10 numbers long</template>
                             <label>Address</label>
-                            <input required type="text" name="address" placeholder="Click here to enter your address">
-                        </span>
-                        <span>
+                            <input required type="text" name="address" placeholder="Click here to type">
+                            <template>Format: Address 12345; min lenght: 5</template>
+                        </div>
+                        <div>
                             <label>Location</label>
-                            <input required type="text" name="location" placeholder="Click here to enter your location">
+                            <input required type="text" name="location" placeholder="Click here to type">
+                            <template>Should be at least 4 letters long</template>
                             <label>Post code</label>
-                            <input required type="text" name="postCode" placeholder="Click here to enter your post code">
-                            <label>Password</label>
-                            <input required type="password" name="password" placeholder="Click here to enter a Password">
-                            <label>Confirm password</label>
-                            <input required type="password" name="passwordConfirm" placeholder="Confirm the password">
+                            <input required type="num" name="postCode" placeholder="Click here to type">
+                            <template>Should be 4 or 5 numbers long</template>
                             <label>Email</label>
-                            <input required type="email" name="email" placeholder="Click here to enter your Email">
+                            <input required type="email" name="email" placeholder="Click here to type">
+                            <template>Invalid format</template>
                             <label>Confirm email</label>
-                            <input required type="email" name="emailConfirm" placeholder="Confirm your email">
-                        </span>
-                    </div>
+                            <input required type="email" name="emailConfirm" placeholder="Click here to type">
+                            <template>Email does not match</template>
+                            <label>Password</label>
+                            <input required type="password" name="password" placeholder="Click here to type">
+                            <template>Should be at least 8 letters long</template>
+                            <label>Confirm password</label>
+                            <input required type="password" name="passwordConfirm" placeholder="Click here to type">
+                            <template>Password does not match</template>
+                        </div>
+                    </fieldset>
                     <input class="light-green-button" type="submit" value="Submit" aria-label="Click to validate and sign up">
                 </form>
             </section>

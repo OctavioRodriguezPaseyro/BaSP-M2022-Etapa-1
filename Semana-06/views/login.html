@@ -27,7 +27,10 @@
                 <input type="text" placeholder="Search" class="search-field" aria-label="Search bar">
                 <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
             </form>
-            <div class=access aria-label="Home">
+            <div class=access aria-label="Go back">
+                <button type="button" class="signup-button">
+                    <a href="sign-up.html">Sign up</a>
+                </button>
                 <button type="button" class="home-button"><a href="/views/index.html">
                     <a href="index.html">Home</a>
                 </button>
@@ -44,18 +47,22 @@
             <section class="container sign-in" aria-label="Sign in">
                 <h3 aria-hidden="true">Sign in</h3>
                 <form aria-label="Enter your credentials">
-                    <label>Email</label>
-                    <input required type="email" name="email" placeholder="Click here to enter your Email">
-                    <label>Password</label>
-                    <input required type="password" name="fullName" placeholder="Click here to enter your password">
+                    <fieldset>
+                        <label>Email</label>
+                        <input required type="email" name="email" placeholder="Click here to type">
+                        <template>Email not found</template>
+                        <label>Password</label>
+                        <input required type="password" name="fullName" placeholder="Click here to type">
+                        <template>Incorrect password</template>
+                    </fieldset>
                     <div>
                         <span>
                             <input type="checkbox" value="lsRememberMe" class="rememberMe" aria-label="Do you want the site to remember your credentials?">
                             <label>Remember&nbsp;me</label>
                         </span>
-                        <a href="password-recovery">Forgot your password?</a>
+                        <a href="recover-password.html">Forgot your password?</a>
                     </div>
-                    <button class="light-green-button" type="button">Log in</button>
+                    <input class="light-green-button" type="submit" value="Submit" aria-label="Click to validate and sign in">
                 </form>
             </section>
         </main>
