@@ -8,10 +8,6 @@ header{
     height: auto;
 }
 
-input{
-    font-family: 'Roboto', sans-serif;
-}
-
 header div input[type='image'],
 header form input[type='image']{
     height: 50px;
@@ -25,6 +21,7 @@ header div button{
 }
 
 .burguer-btn input{
+    border: none;
     filter: invert(100%);
 }
 

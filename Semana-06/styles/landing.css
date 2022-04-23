@@ -162,7 +162,7 @@ main{
     border-color: #7B61FF;
     border-style: solid;
     border-radius: 4px;
-    font: 100%/1.5 Helvetica, sans-serif;
+    font: 100%/1.5 'Roboto', sans-serif;
 }
 
 .system-information select{
@@ -170,7 +170,7 @@ main{
     border-radius: 4px;
     background-color: #fff;
     border-style: solid;
-    font: 100%/1.5 Helvetica, sans-serif;
+    font: 100%/1.5 'Roboto', sans-serif;
     width: 330px;
     height: 50px;
 }
@@ -179,7 +179,7 @@ main{
     border-color: #7B61FF;
     border-style: solid;
     border-radius: 4px;
-    font: 100%/1.5 Helvetica, sans-serif;
+    font: 100%/1.5 'Roboto', sans-serif;
     width: 430px;
     height: 240px;
     margin-top: 75px;
@@ -189,7 +189,7 @@ main{
     background-color: #AACE9B;
     border-style: none;
     border-radius: 5px;
-    font: 100%/1.5 Helvetica, sans-serif;
+    font: 100%/1.5 'Roboto', sans-serif;
     margin-top: 3%;
 }
 

@@ -26,6 +26,10 @@ main{
     align-items: center;
 }
 
+.sign-in h3{
+    margin: 1% 0%;
+}
+
 .sign-in{
     display: flex;
     flex-direction: column;
@@ -44,6 +48,18 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 2% 0%;
+}
+
+.sign-in form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sign-in form span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 aside div button{

@@ -44,19 +44,37 @@
             <section class="container sign-up"aria-label="Sign-up form">
                 <h3 aria-hidden="true">Sign up</h3>
                 <form aria-label="Enter your credentials">
-                    <label>First Name</label>
-                    <input required type="name" name="firstName" placeholder="Click here to enter your Email">
-                    <label>Last Name</label>
-                    <input required type="name" name="lastName" placeholder="Click here to enter your password">
-                    <label>Password</label>
-                    <input required type="password" name="password" placeholder="Password">
-                    <label>Confirm password</label>
-                    <input required type="password" name="passwordConfirm" placeholder="Confirm password">
-                    <label>Email</label>
-                    <input required type="email" name="email" placeholder="Email">
-                    <label>Confirm email</label>
-                    <input required type="email" name="emailConfirm" placeholder="Confirm email">
-                    <button type="button" class="home-button" aria-label="Click to validate and sign up">Sign up</button>
+                    <div>
+                        <span>
+                            <label>First Name</label>
+                            <input required type="name" name="firstName" placeholder="Click here to enter your First Name">
+                            <label>Last Name</label>
+                            <input required type="name" name="lastName" placeholder="Click here to enter your Last Name">
+                            <label>DNI</label>
+                            <input required type="number" name="DNI" placeholder="Click here to enter your DNI">
+                            <label>Birthday</label>
+                            <input required type="date" name="birth" placeholder="Click here to enter your birthday">
+                            <label>Phone number</label>
+                            <input required type="tel" name="phone" placeholder="Click here to enter your phone number">
+                            <label>Address</label>
+                            <input required type="text" name="address" placeholder="Click here to enter your address">
+                        </span>
+                        <span>
+                            <label>Location</label>
+                            <input required type="text" name="location" placeholder="Click here to enter your location">
+                            <label>Post code</label>
+                            <input required type="text" name="postCode" placeholder="Click here to enter your post code">
+                            <label>Password</label>
+                            <input required type="password" name="password" placeholder="Click here to enter a Password">
+                            <label>Confirm password</label>
+                            <input required type="password" name="passwordConfirm" placeholder="Confirm the password">
+                            <label>Email</label>
+                            <input required type="email" name="email" placeholder="Click here to enter your Email">
+                            <label>Confirm email</label>
+                            <input required type="email" name="emailConfirm" placeholder="Confirm your email">
+                        </span>
+                    </div>
+                    <input class="light-green-button" type="submit" value="Submit" aria-label="Click to validate and sign up">
                 </form>
             </section>
         </main>
