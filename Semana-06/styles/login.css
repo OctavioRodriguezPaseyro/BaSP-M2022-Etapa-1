@@ -47,6 +47,7 @@ main{
 
 .sign-in form fieldset{
     margin: 1% 0%;
+    width: 100%;
 }
 
 .sign-in form fieldset label{
@@ -72,4 +73,60 @@ main{
 .sign-in form input[type=submit]{
     align-self: center;
     width: 15%;
+}
+
+@media(max-width:768px){
+    .search-field{
+        width: 250px;
+        height: 50px;
+    }
+    
+    .search-submit{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-in form{
+        width: 80%;
+    }
+}
+
+@media(max-width:480px){
+    body{
+        overflow-x:hidden;
+    }
+
+    header nav,
+    .search-field{
+        display: none;
+    }
+
+    .burguer-btn{
+        order:1;
+    }
+
+    .search-bar{
+        order:3;
+    }
+
+    .search-submit{
+        background-color: transparent;
+        border-style: hidden;
+        filter: invert(100%);
+    }
+    
+    .access{
+        order:2;
+    }
+
+    .logo img{
+        margin:0%;
+    }
 }
