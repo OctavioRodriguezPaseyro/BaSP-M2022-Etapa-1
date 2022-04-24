@@ -6,32 +6,12 @@ footer{
     text-align: center;
 }
 
-.extras{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-self: center;
-    background-color: #50A780;
-    width: 100%;
-    padding: 25px 0%;
-    margin: 2% 0%;
-}
-
-.extras a{
-    color: #DBDBDB;
-}
-
-.extras hr{
-    border: 1px solid #000;
-    background-color: #000;
-}
-
 .social-media{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 3%
+    margin: 1.5%
 }
 
 .social-media img{

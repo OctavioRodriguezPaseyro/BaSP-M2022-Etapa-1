@@ -204,6 +204,15 @@ main{
     margin: 2% 0%;
 }
 
+.extras a{
+    color: #DBDBDB;
+}
+
+.extras hr{
+    border: 1px solid #000;
+    background-color: #000;
+}
+
 @media(max-width:768px){
     main{
         width: 100%;

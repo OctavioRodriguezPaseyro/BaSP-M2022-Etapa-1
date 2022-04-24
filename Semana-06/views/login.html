@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <link rel="icon" href="../assets/favicon.ico">
+        <script type="text/javascript" src="../javascript/login.js"></script>
     </head>
     <body>
         <header aria-label="Header">
@@ -49,20 +50,20 @@
                 <form aria-label="Enter your credentials">
                     <fieldset>
                         <label>Email</label>
-                        <input required type="email" name="email" placeholder="Click here to type">
-                        <template>Email not found</template>
+                        <input class="email-field" type="email" name="email" placeholder="Click here to type">
+                        <p class="email-na">Incorrect email</p>
                         <label>Password</label>
-                        <input required type="password" name="fullName" placeholder="Click here to type">
-                        <template>Incorrect password</template>
+                        <input class="password-field" type="password" name="fullName" placeholder="Click here to type">
+                        <p class="password-na">Incorrect password</p>
                     </fieldset>
                     <div>
                         <span>
                             <input type="checkbox" value="lsRememberMe" class="rememberMe" aria-label="Do you want the site to remember your credentials?">
                             <label>Remember&nbsp;me</label>
                         </span>
-                        <a href="recover-password.html">Forgot your password?</a>
+                        <a href="password-recovery.html">Forgot your password?</a>
                     </div>
-                    <input class="light-green-button" type="submit" value="Submit" aria-label="Click to validate and sign in">
+                    <button id="loginSubmit" class="light-green-button" aria-label="Click to validate and sign in">Sign in</button>
                 </form>
             </section>
         </main>

@@ -31,7 +31,7 @@ main{
     flex-direction: column;
     align-items: center;
     color: #373867;
-    margin: 1.5% 0%;
+    margin: 1.5% 0% 15% 0%;
     width: 100%;
 }
 
@@ -40,6 +40,7 @@ main{
 }
 
 .sign-in form{
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,12 +51,30 @@ main{
     width: 100%;
 }
 
+.invalid-input{
+    border-color: #F13312;
+    background-color: #F1331250;
+}
+
 .sign-in form fieldset label{
     margin: 1% 0%;
 }
 
 .sign-in form fieldset input{
+    width: 100%;
     margin: 1% 0%;
+}
+
+.email-na{
+    width: 100%;
+    visibility: hidden;
+    color: #F13312; 
+}
+
+.password-na{
+    width: 100%;
+    visibility: hidden;
+    color: #F13312;
 }
 
 .sign-in form div{
@@ -70,9 +89,9 @@ main{
     flex-direction: row;
 }
 
-.sign-in form input[type=submit]{
+.sign-in form button{
     align-self: center;
-    width: 15%;
+    width: 30%;
 }
 
 @media(max-width:768px){

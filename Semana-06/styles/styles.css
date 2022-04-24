@@ -63,3 +63,10 @@ button:hover{
     border-radius: 5px;
     font: 100%/1.5 'Roboto', sans-serif;
 }
+
+dialog{
+    border: none;
+    color: #F13312;
+    background-color: transparent;
+    margin: none;
+}
