@@ -1,11 +1,4 @@
-var email = document.getElementsByClassName("email-field");
-var password = document.getElementsByClassName("password-field");
-var emailError = document.getElementsByClassName("email-na");
-var aver = emailError[0]
-var passwordError = document.getElementsByClassName("password-na");
-var emailConditions = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
 var loginSubmit = document.getElementById("loginSubmit");
-
 
 function validationLetterNum(string){
     var hasNumber = false;
@@ -23,24 +16,32 @@ function validationLetterNum(string){
 }
 
 function validateEmail(email){
+    var emailConditions = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
     return emailConditions.test(email);
 }
 
-function emailNA(){
-    if (validateEmail(email.value) == false){
-        emailError.style.visibility = "visible";
-        email.classList = "invalid-input";
-    }
-}
-
-function passwordNA(){
-    if (validationLetterNum(password.value) == false){
-        passwordError.style.visibility = "visible";
-        passwordError.classList = "invalid-input";
-    }
-}
-
 window.onload = function(){
+
+    var email = document.getElementsByClassName("email-field")[0];
+    var password = document.getElementsByClassName("password-field")[0];
+    var emailError = document.getElementsByClassName("email-na")[0];
+    var passwordError = document.getElementsByClassName("password-na")[0];
+
+    console.log(email);
+
+    function emailNA(e){
+        if (validateEmail(email.value) == false){
+            emailError.style.visibility = "visible";
+            email.classList = "invalid-input";
+        }
+    }
+    
+    function passwordNA(e){
+        if (validationLetterNum(password.value) == false){
+            passwordError.style.visibility = "visible";
+            password.classList = "invalid-input";
+        }
+    }
 
     email.addEventListener("blur", emailNA);
 
