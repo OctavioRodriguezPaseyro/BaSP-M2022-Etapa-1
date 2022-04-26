@@ -43,6 +43,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 1% 0%;
     width: 100%;
 }
@@ -55,10 +56,16 @@ main{
     width: 100%;
 }
 
+.invalid-input{
+    border-color: #F13312;
+    background-color: #F1331250;
+}
+
 .sign-up fieldset div{
     display: flex;
     flex-direction: column;
     margin: 1%;
+    width: 20%;
 }
 
 .sign-up form fieldset div label{
@@ -66,7 +73,14 @@ main{
 }
 
 .sign-up form fieldset div input{
+    width: 100%;
     margin: 1% 0%;
+}
+
+.sign-up fieldset div p{
+    visibility: hidden;
+    color: #F13312;
+    width: 100%;
 }
 
 .sign-up form button{
@@ -91,9 +105,9 @@ main{
         justify-content: center;
         align-items: center;
     }
-    
-    .sign-up form{
-        width: 80%;
+
+    .sign-up fieldset div{
+        width: 50%;
     }
 }
 

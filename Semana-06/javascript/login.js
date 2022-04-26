@@ -15,11 +15,6 @@ function validationLetterNum(string){
     return hasLetter && hasNumber;
 }
 
-function validateEmail(email){
-    var emailConditions = /[a-z0-9]+@[a-z]+.[a-z]{2,3}/;
-    return emailConditions.test(email);
-}
-
 window.onload = function(){
 
     var email = document.getElementsByClassName("email-field")[0];
@@ -27,16 +22,19 @@ window.onload = function(){
     var emailError = document.getElementsByClassName("email-na")[0];
     var passwordError = document.getElementsByClassName("password-na")[0];
 
-    console.log(email);
+    function validateEmail(email){
+        var emailConditions = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return emailConditions.test(email);
+    }
 
-    function emailNA(e){
+    function emailNA(){
         if (validateEmail(email.value) == false){
             emailError.style.visibility = "visible";
             email.classList = "invalid-input";
         }
     }
     
-    function passwordNA(e){
+    function passwordNA(){
         if (validationLetterNum(password.value) == false){
             passwordError.style.visibility = "visible";
             password.classList = "invalid-input";

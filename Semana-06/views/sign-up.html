@@ -51,46 +51,46 @@
                     <fieldset>
                         <div>
                             <label>First Name</label>
-                            <input type="name" name="firstName" placeholder="Click here to type">
-                            <template>Should be at least 4 letters long</template>
+                            <input class="first-name-field" type="name" name="firstName" placeholder="Click here to type">
+                            <p class="first-name-na">Should be at least 4 letters long</p>
                             <label>Last Name</label>
-                            <input type="name" name="lastName" placeholder="Click here to type">
-                            <template>Should be at least 4 letters long</template>
+                            <input class="last-name-field" type="name" name="lastName" placeholder="Click here to type">
+                            <p class="last-name-na">Should be at least 4 letters long</p>
                             <label>DNI</label>
-                            <input type="number" name="DNI" placeholder="Click here to type">
-                            <template>Should be at least 8 numbers long</template>
+                            <input class="dni-field" type="number" name="DNI" placeholder="Click here to type">
+                            <p class="dni-na">Should be at least 8 numbers long</p>
                             <label>Birthday</label>
-                            <input type="date" name="birth" placeholder="Click here to type">
-                            <template>Invalid format</template>
+                            <input class="birthday-field" type="date" name="birth" placeholder="Click here to type">
+                            <p class="birthday-na">Invalid format</p>
                             <label>Phone number</label>
-                            <input type="tel" name="phone" placeholder="Click here to type">
-                            <template>Should be 10 numbers long</template>
+                            <input class="phone-number-field" type="tel" name="phone" placeholder="Click here to type">
+                            <p class="phone-number-na">Should be 10 numbers long</p>
                             <label>Address</label>
-                            <input type="text" name="address" placeholder="Click here to type">
-                            <template>Format: Address 12345; min lenght: 5</template>
+                            <input class="address-field" type="text" name="address" placeholder="Click here to type">
+                            <p class="address-na">Format: Address 12345; min lenght: 5</p>
                         </div>
                         <div>
                             <label>Location</label>
-                            <input type="text" name="location" placeholder="Click here to type">
-                            <template>Should be at least 4 letters long</template>
+                            <input class="location-field" type="text" name="location" placeholder="Click here to type">
+                            <p class="location-na">Should be at least 4 letters long</p>
                             <label>Post code</label>
-                            <input type="num" name="postCode" placeholder="Click here to type">
-                            <template>Should be 4 or 5 numbers long</template>
+                            <input class="post-code-field" type="num" name="postCode" placeholder="Click here to type">
+                            <p class="post-code-na">Should be 4 or 5 numbers long</p>
                             <label>Email</label>
-                            <input type="email" name="email" placeholder="Click here to type">
-                            <template>Invalid format</template>
+                            <input class="email-field" type="email" name="email" placeholder="Click here to type">
+                            <p class="email-na">Invalid format</p>
                             <label>Confirm email</label>
-                            <input type="email" name="emailConfirm" placeholder="Click here to type">
-                            <template>Email does not match</template>
+                            <input class="confirm-email-field" type="email" name="emailConfirm" placeholder="Click here to type">
+                            <p class="confirm-email-na">Email does not match</p>
                             <label>Password</label>
-                            <input type="password" name="password" placeholder="Click here to type">
-                            <template>Should be at least 8 letters long</template>
+                            <input class="password-field" type="password" name="password" placeholder="Click here to type">
+                            <p class="password-na">Should be at least 8 letters long</p>
                             <label>Confirm password</label>
-                            <input type="password" name="passwordConfirm" placeholder="Click here to type">
-                            <template>Password does not match</template>
+                            <input class="confirm-password-field" type="password" name="passwordConfirm" placeholder="Click here to type">
+                            <p class="confirm-password-na">Password does not match</p>
                         </div>
                     </fieldset>
-                    <button class="light-green-button" aria-label="Click to validate and sign up">Sign up</button>
+                    <button id="signUpSubmit" class="light-green-button" aria-label="Click to validate and sign up">Sign up</button>
                 </form>
             </section>
         </main>
