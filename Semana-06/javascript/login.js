@@ -1,5 +1,3 @@
-var loginSubmit = document.getElementById("loginSubmit");
-
 function validationLetterNum(string){
     var hasNumber = false;
     var hasLetter = false;
