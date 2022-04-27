@@ -95,6 +95,8 @@ window.onload = function(){
     var postalCodeError = document.getElementsByClassName("post-code-na")[0];
     var signUpEmail = document.getElementsByClassName("email-field")[0];
     var signUpEmailError = document.getElementsByClassName("email-na")[0];
+    var confirmEmail = document.getElementsByClassName("confirm-email-field")[0];
+    var confirmEmailError = document.getElementsByClassName("confirm-email-na")[0];
     var signUpPassword = document.getElementsByClassName("password-field")[0];
     var signUpPasswordError = document.getElementsByClassName("password-na")[0];
     var confirmPassword = document.getElementsByClassName("confirm-password-field")[0];
@@ -226,7 +228,7 @@ window.onload = function(){
   }
 
   function showSignUpEmailErrors() {
-    if(!validateSignUpEmail(signUpEmail.value)){
+    if(!validateSignUpEmail(signUpEmail.value)) {
       signUpEmailError.style.visibility = "visible";
       signUpEmail.classList = "invalid-input";
       signUpEmailMessage = signUpEmailError.textContent;
@@ -238,6 +240,21 @@ window.onload = function(){
   function hideSignUpEmailErrors() {
     signUpEmailError.style.visibility = "hidden";
     signUpEmail.classList -= "invalid-input";
+  }
+
+  function showConfirmEmailErrors() {
+    if ((signUpEmail.value !== confirmEmail.value) && confirmEmail.value !== NaN) {
+      confirmEmailError.style.visibility = "visible";
+      confirmEmail.classList = "invalid-input";
+      confirmEmailMessage = confirmEmailError.textContent;
+    } else {
+      confirmEmailMessage = confirmEmail.value;
+    }
+  }
+
+  function hideConfirmEmailErrors() {
+    confirmEmailError.style.visibility = "hidden";
+    confirmEmail.classList -= "invalid-input";
   }
 
   function showSignUpPasswordErrors() {
@@ -257,8 +274,7 @@ window.onload = function(){
   }
 
   function showConfirmPasswordErrors() {
-    if (!validateJustLetters(confirmPassword.value) || !validateJustNumbers(confirmPassword.value) || 
-    !validateStringLength(confirmPassword.value, 7)) {
+    if ((signUpPassword.value !== confirmPassword.value) && (confirmPassword.value !== NaN)) {
       confirmPasswordError.style.visibility = "visible";
       confirmPassword.classList = "invalid-input";
       confirmPasswordMessage = confirmPasswordError.textContent;
@@ -298,6 +314,8 @@ window.onload = function(){
   postalCode.addEventListener("focus", hidePostalCodeErrors);
   signUpEmail.addEventListener("blur", showSignUpEmailErrors);
   signUpEmail.addEventListener("focus", hideSignUpEmailErrors);
+  confirmEmail.addEventListener("blur", showConfirmEmailErrors);
+  confirmEmail.addEventListener("focus", hideConfirmEmailErrors);
   signUpPassword.addEventListener("blur", showSignUpPasswordErrors);
   signUpPassword.addEventListener("focus", hideSignUpPasswordErrors);
   confirmPassword.addEventListener("blur", showConfirmPasswordErrors);
