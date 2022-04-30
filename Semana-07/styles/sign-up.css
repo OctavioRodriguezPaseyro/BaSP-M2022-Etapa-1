@@ -1,0 +1,156 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5% 0%;
+}
+
+.logo img{
+    align-self: center;
+    width: 60px;
+    height: 60px;
+}
+
+.logo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #373867;
+    margin: 1.5% 0%;
+    width: 100%;
+}
+
+.sign-up h3{
+    margin: 1% 0%;
+}
+
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 0%;
+    width: 100%;
+}
+
+.sign-up form fieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.invalid-input{
+    border-color: #F13312;
+    background-color: #F1331250;
+}
+
+.sign-up fieldset div{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 20%;
+}
+
+.sign-up form fieldset div label{
+    margin: 1% 0%;
+    flex:1;
+}
+
+.sign-up form fieldset div input{
+    width: 100%;
+    margin: 1% 0%;
+    flex:1;
+}
+
+.sign-up fieldset div p{
+    visibility: hidden;
+    color: #F13312;
+    width: 100%;
+    flex:1;
+}
+
+.sign-up form button{
+    align-self: center;
+    width: 15%;
+}
+
+@media(max-width:768px){
+    .search-field{
+        width: 250px;
+        height: 50px;
+    }
+    
+    .search-submit{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-up fieldset div{
+        width: 50%;
+        margin: 0% 2%;
+    }
+}
+
+@media(max-width:480px){
+    body{
+        overflow-x:hidden;
+    }
+
+    header nav,
+    .search-field{
+        display: none;
+    }
+
+    .burguer-btn{
+        order:1;
+    }
+
+    .search-bar{
+        order:3;
+    }
+
+    .search-submit{
+        background-color: transparent;
+        border-style: hidden;
+        filter: invert(100%);
+    }
+    
+    .access{
+        order:2;
+    }
+
+    .logo img{
+        margin:0%;
+    }
+
+    .sign-up form fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5%
+}
+
+.social-media img{
+    height: 35px;
+    width: 35px;
+    filter: grayscale(200%);
+}

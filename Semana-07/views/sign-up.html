@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix | Sign up</title>
+        <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="../styles/header.css">
+        <link rel="stylesheet" type="text/css" href="../styles/sign-up.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="../assets/favicon.ico">
+        <script type="text/javascript" src="../javascript/sign-up.js"></script>
+    </head>
+    <body>
+        <header aria-label="Header">
+            <div class="burguer-btn" aria-label="Burguer button">
+                <input type="image" src="../assets/burguer-button.png" alt="open menu"/>
+            </div>
+            <nav aria-label="Navigation">
+                <a href="/tutorials">Tutorials</a>&nbsp;|&nbsp;<a href="/contact">Contact</a>
+            </nav>
+            <form class="search-bar" aria-label="Search">
+                <input type="text" placeholder="Search" class="search-field" aria-label="Search bar">
+                <input type="image" src="../assets/magnifying-glass.ico" class="search-submit" aria-label="Submit search"/>
+            </form>
+            <div class=access aria-label="Go back">
+                <button type="button" class="login-button">
+                    <a href="login.html">Log in</a>
+                </button>
+                <button type="button" class="home-button"><a href="/views/index.html">
+                    <a href="index.html">Home</a>
+                </button>
+            </div>
+        </header>
+        <main aria-label="Main content">
+            <section class="container logo" aria-hidden="true">
+                <img src="../assets/trackgenix-logo.svg" alt="">
+                <div>
+                    <h1>TRACKGENIX</h1>
+                    <h2>DATA&nbsp;MANAGEMENT</h2>
+                </div>
+            </section>
+            <section class="container sign-up"aria-label="Sign-up form">
+                <h3 aria-hidden="true">Sign up</h3>
+                <form aria-label="Enter your credentials">
+                    <fieldset>
+                        <div>
+                            <label for="first-name-field">First Name</label>
+                            <input id="first-name-field" type="name" name="firstName" placeholder="Click here to type">
+                            <p class="first-name-na">Minimum of 4 letters</p>
+                            <label for="last-name-field">Last Name</label>
+                            <input id="last-name-field" type="name" name="lastName" placeholder="Click here to type">
+                            <p class="last-name-na">Minimum of 4 letter</p>
+                            <label for="dni-field">DNI</label>
+                            <input id="dni-field" type="number" name="DNI" placeholder="Click here to type">
+                            <p class="dni-na">Minimum of 8 numbers</p>
+                            <label for="birthday-field">Birthday</label>
+                            <input id="birthday-field" type="date" name="birth" placeholder="Click here to type">
+                            <p class="birthday-na">Invalid format</p>
+                            <label for="phone-number-field">Phone number</label>
+                            <input id="phone-number-field" type="tel" name="phone" placeholder="Click here to type">
+                            <p class="phone-number-na">Should be 10 numbers long</p>
+                            <label for="address-field">Address</label>
+                            <input id="address-field" type="text" name="address" placeholder="Click here to type">
+                            <p class="address-na">Format: Address 12345</p>
+                        </div>
+                        <div>
+                            <label for="location-field">Location</label>
+                            <input id="location-field" type="text" name="location" placeholder="Click here to type">
+                            <p class="location-na">Minimum of 4 letters</p>
+                            <label for="post-code-field">Post code</label>
+                            <input id="post-code-field" type="num" name="postCode" placeholder="Click here to type">
+                            <p class="post-code-na">Should be 4 or 5 numbers</p>
+                            <label for="email-field">Email</label>
+                            <input id="email-field" type="email" name="email" placeholder="Click here to type">
+                            <p class="email-na">Invalid format</p>
+                            <label for="confirm-email-field">Confirm email</label>
+                            <input id="confirm-email-field" type="email" name="emailConfirm" placeholder="Click here to type">
+                            <p class="confirm-email-na">Email does not match</p>
+                            <label for="password-field">Password</label>
+                            <input id="password-field" type="password" name="password" placeholder="Click here to type">
+                            <p class="password-na">Password too weak</p>
+                            <label for="confirm-password-field">Confirm password</label>
+                            <input id="confirm-password-field" type="password" name="passwordConfirm" placeholder="Click here to type">
+                            <p class="confirm-password-na">Password does not match</p>
+                        </div>
+                    </fieldset>
+                    <button id="signUpSubmit" class="light-green-button" aria-label="Click to validate and sign up">Sign up</button>
+                </form>
+            </section>
+        </main>
+        <footer aria-label="Footer">
+            <div class="container social-media" aria-label="Our social media">
+                <a href="https://www.linkedin.com/trackgenix" target="_blank"><img src="../assets/linkedin-logo.svg" alt="visit our linkedin"/></a>
+                <a href="https://www.twitter.com/trackgenix" target="_blank"><img src="../assets/twitter-logo.svg" alt="visit our twitter"/></a>
+                <a href="https://www.facebook.com/trackgenix" target="_blank"><img src="../assets/facebook-logo.svg" alt="visit our facebook"/></a>
+                <a href="https://www.instagram.com/trackgenix" target="_blank"><img src="../assets/instagram-logo.svg" alt="visit our instagram"/></a>
+                <a href="https://www.github.com/trackgenix" target="_blank"><img src="../assets/github-logo.png" alt="visit our github"/></a>
+            </div>
+            <div class="footer-address" aria-label="Copyright">
+                <address>
+                    <p>
+                        Montevideo, Uruguay
+                    </p>
+                    <p>
+                        Copyright 2022 Radium Rocket. All rights reserved.
+                    </p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
