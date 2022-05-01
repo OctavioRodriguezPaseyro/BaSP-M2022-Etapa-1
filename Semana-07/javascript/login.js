@@ -24,6 +24,7 @@ window.onload = function(){
     var password = document.getElementById("login-password-field");
     var emailError = document.getElementsByClassName("email-na")[0];
     var passwordError = document.getElementsByClassName("password-na")[0];
+    var loginSubmit = document.getElementById("loginSubmit");
 
     function showEmailErrors(){
         if (validateEmail(email.value) == false){
@@ -49,11 +50,36 @@ window.onload = function(){
         password.classList -= "invalid-input";
     };
 
+    function showValidationsContent(event) {
+      event.preventDefault();
+      submitInfo();
+    }
+
+    function validation() {
+      return validateEmail(email.value) && validationLetterNum(password.value) && password.value.length > 7;
+    }
+  
+    function submitInfo(){
+      if(validation()) {
+        fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email=" + email.value + "&password=" + password.value)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function(data) {
+          console.log(data);
+          alert(data.msg);
+        })
+        .catch(function(error) {
+          alert(error.msg);
+        });
+      } else {
+        alert("Check your credentials");
+      }
+    }
+
     email.addEventListener("blur", showEmailErrors);
-
     email.addEventListener("focus", hideEmailErrors);
-
     password.addEventListener("blur", showPasswordErrors);
-
     password.addEventListener("focus", hidePasswordErrors);
+    loginSubmit.addEventListener("click", showValidationsContent);
 }

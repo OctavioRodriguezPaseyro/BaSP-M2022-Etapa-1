@@ -70,20 +70,17 @@ main{
 
 .sign-up form fieldset div label{
     margin: 1% 0%;
-    flex:1;
 }
 
 .sign-up form fieldset div input{
     width: 100%;
     margin: 1% 0%;
-    flex:1;
 }
 
 .sign-up fieldset div p{
     visibility: hidden;
     color: #F13312;
     width: 100%;
-    flex:1;
 }
 
 .sign-up form button{
