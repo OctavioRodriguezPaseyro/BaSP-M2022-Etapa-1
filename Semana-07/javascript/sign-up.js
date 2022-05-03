@@ -7,8 +7,10 @@ var directionMessage = "";
 var locationMessage = "";
 var postalCodeMessage = "";
 var signUpEmailMessage = "";
+var confirmEmailMessage = "";
 var signUpPasswordMessage = "";
 var confirmPasswordMessage = "";
+var signUpAlert = "";
 
 function validateJustLetters(string) {
     var notANumber = false;
@@ -101,8 +103,9 @@ window.onload = function(){
     var signUpPasswordError = document.getElementsByClassName("password-na")[0];
     var confirmPassword = document.getElementById("confirm-password-field");
     var confirmPasswordError = document.getElementsByClassName("confirm-password-na")[0];
-    var signUpButton = document.getElementById("signUpSubmit");
- 
+    var signUpSubmit = document.getElementById("signUpSubmit");
+    var dateFormat = date.value.substring(5, 7) + "/" + date.value.substring(8, 10) + "/" + date.value.substring(0, 4);
+
     function showNameErrors() {
         if (!validateJustLetters(name.value) || !validateStringLength (name.value, 3) || validateJustNumbers(name.value)) {
             nameError.style.visibility = "visible";
@@ -288,13 +291,79 @@ window.onload = function(){
         confirmPassword.classList -= "invalid-input";
     };
 
-    function showValidationMessages() {
-        var signUpAlert = "Name: " + nameMessage + "\nLast Name: " + lastNameMessage + "\nDNI: " + docNumberMessage + 
-        "\nDate: " + dateMessage + "\nPhone: " + phoneMessage + "\nDirection: " + directionMessage + "\nLocation: " +
-        locationMessage + "\nPost Code: " + postalCodeMessage + "\nEmail: " + signUpEmailMessage + "\nPassword: " +
-        signUpPasswordMessage + "\nRepeat Password: " + confirmPasswordMessage;
-        alert(signUpAlert);
+    function showValidationMessages(event) {
+        var signUpAlert = 
+        "Name: " + nameMessage +
+        "\nLast Name: " + lastNameMessage +
+        "\nDNI: " + docNumberMessage + 
+        "\nDate: " + dateMessage +
+        "\nPhone: " + phoneMessage +
+        "\nDirection: " + directionMessage +
+        "\nLocation: " + locationMessage +
+        "\nPost Code: " + postalCodeMessage +
+        "\nEmail: " + signUpEmailMessage +
+        "\nConfirm email: " + confirmEmailMessage +
+        "\nPassword: " + signUpPasswordMessage;
+        event.preventDefault();
+        alert(signUpAlert)
+        submitInfo();
     };
+
+    function finalValidation() {
+        if(nameMessage == name.value && lastNameMessage == lastName.value && docNumberMessage == docNumber.value &&
+            dateMessage == date.value && phoneMessage == phone.value && directionMessage == direction.value &&
+            locationMessage == location.value && postalCodeMessage == postalCode.value && signUpEmailMessage ==
+            signUpEmail.value && confirmEmailMessage == confirmEmail.value && signUpPasswordMessage == signUpPassword.value && confirmPasswordMessage ==
+            confirmPassword.value) {
+                return true;
+            }
+        }
+
+    function submitInfo() {
+        if (finalValidation()) {
+            fetch("https://basp-m2022-api-rest-server.herokuapp.com/signup?" +
+                    "name=" + name.value +
+                    "&lastName=" + lastName.value +
+                    "&email=" + signUpEmail.value +
+                    "&password=" + signUpPassword.value +
+                    "&dni=" + docNumber.value +
+                    "&dob=" + dateFormat +
+                    "&phone=" + phone.value +
+                    "&address=" + direction.value +
+                    "&city=" + location.value +
+                    "&zip=" + postalCode.value)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (data.success == true) {
+                        alert("Request done!\n" + signUpAlert + "\n" + data.msg);
+                        saveCredentialsLocalStorage();
+                    } else {
+                        alert(data.msg);
+                    }
+                }).catch(function (error) {
+                    alert(error.msg);
+                });
+        } else {
+            alert("One or more inputs are invalid.\n" + signUpAlert +
+                "\n¡Check the inputs errors before you continue!")
+        }
+    }
+
+    function saveCredentialsLocalStorage() {
+        localStorage.setItem("First Name", name.value);
+        localStorage.setItem("Last Name", lastName.value);
+        localStorage.setItem("Password", signUpPassword.value);
+        localStorage.setItem("DNI", docNumber.value);
+        localStorage.setItem("Birthday", dateFormat);
+        localStorage.setItem("Phone", phone.value);
+        localStorage.setItem("Address", direction.value);
+        localStorage.setItem("Location", location.value);
+        localStorage.setItem("Post code", postalCode.value);
+        localStorage.setItem("Email", signUpEmail.value);
+        localStorage.setItem("Password", signUpPassword.value);
+    }
 
     name.addEventListener("blur", showNameErrors);
     name.addEventListener("focus", hideNameErrors);
@@ -320,5 +389,5 @@ window.onload = function(){
     signUpPassword.addEventListener("focus", hideSignUpPasswordErrors);
     confirmPassword.addEventListener("blur", showConfirmPasswordErrors);
     confirmPassword.addEventListener("focus", hideConfirmPasswordErrors);
-    signUpButton.addEventListener("click", showValidationMessages);
+    signUpSubmit.addEventListener("click", showValidationMessages);
 }
